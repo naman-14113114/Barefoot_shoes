@@ -140,7 +140,7 @@ export function FaqView() {
             })
           ) : (
             <div className="py-12 text-center text-[#767676] space-y-2">
-              <p className="text-base font-medium text-black">No questions found matching "{searchQuery}"</p>
+              <p className="text-base font-medium text-black">No questions found matching &ldquo;{searchQuery}&rdquo;</p>
               <p className="text-[13px]">Try different keywords or browse by category above.</p>
             </div>
           )}

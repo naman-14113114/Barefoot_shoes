@@ -5,7 +5,7 @@ import { GalleryGrid } from "@/components/product/GalleryGrid";
 import { StickyBuyBox } from "@/components/product/StickyBuyBox";
 import { StickyAddToCartBar } from "@/components/product/StickyAddToCartBar";
 import { FrequentlyBoughtTogether } from "@/components/product/FrequentlyBoughtTogether";
-import { CraftsmanshipEditorial } from "@/components/product/CraftsmanshipEditorial";
+import { VivoPdpSections } from "@barefoot/ui";
 import { ReviewsSection } from "@/components/product/ReviewsSection";
 
 export function generateStaticParams() {
@@ -49,8 +49,8 @@ export default async function ProductDetailPage({
       {/* 3. Frequently Bought Together Carousel */}
       <FrequentlyBoughtTogether />
 
-      {/* 4. Rich Editorial Craftsmanship & Sustainability Stories */}
-      <CraftsmanshipEditorial />
+      {/* 4. Vivobarefoot Performance Features & Technical Sections */}
+      <VivoPdpSections market="uk" />
 
       {/* 5. Customer Reviews Section */}
       <ReviewsSection />
