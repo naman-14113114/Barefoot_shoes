@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { BarefootProduct } from "@barefoot/shared";
-import { StarRating, AccordionItem } from "@barefoot/ui";
+import { StarRating, AccordionItem, AccordionGroup } from "@barefoot/ui";
 import { useCart } from "@/components/cart/CartProvider";
 import { SizeSelectorModal } from "./SizeSelectorModal";
 
@@ -193,48 +193,50 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         </div>
       </div>
 
-      {/* 9. 6 Collapsible Accordions with exact content */}
+      {/* 9. 6 Collapsible Accordions with single-open mutex behavior */}
       <div className="border-t border-[#eaeaea] pt-2 space-y-0.5">
-        <AccordionItem title="Description" defaultOpen={true}>
-          <p>
-            The LT 03 takes its proportion from retro basketball and keeps the noise out of it. Structured panels give the upper its shape, our thicker barefoot sole gives it weight. It comes from the court and belongs nowhere near one.
-          </p>
-        </AccordionItem>
+        <AccordionGroup defaultOpenId="description">
+          <AccordionItem id="description" title="Description">
+            <p>
+              The LT 03 takes its proportion from retro basketball and keeps the noise out of it. Structured panels give the upper its shape, our thicker barefoot sole gives it weight. It comes from the court and belongs nowhere near one.
+            </p>
+          </AccordionItem>
 
-        <AccordionItem title="Size & fit">
-          <p>
-            Fits true to size. If you take a half size or have wider feet, we recommend taking one size up. Includes our anatomical wide toe box and barefoot zero-drop foundation for natural toe splay.
-          </p>
-        </AccordionItem>
+          <AccordionItem id="size-fit" title="Size & fit">
+            <p>
+              Fits true to size. If you take a half size or have wider feet, we recommend taking one size up. Includes our anatomical wide toe box and barefoot zero-drop foundation for natural toe splay.
+            </p>
+          </AccordionItem>
 
-        <AccordionItem title="Premium features">
-          <ul className="space-y-1.5 pl-0 text-[12px]">
-            {product.features.map((f, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <span className="w-1 h-1 bg-[#000000] mt-2 flex-none" />
-                <span>{f}</span>
-              </li>
-            ))}
-          </ul>
-        </AccordionItem>
+          <AccordionItem id="features" title="Premium features">
+            <ul className="space-y-1.5 pl-0 text-[12px]">
+              {product.features.map((f, i) => (
+                <li key={i} className="flex items-start gap-2">
+                  <span className="w-1 h-1 bg-[#000000] mt-2 flex-none" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+          </AccordionItem>
 
-        <AccordionItem title="Material info">
-          <p>
-            Mediterranean suede sourced from LWG Gold-certified Gruppo Mastrotto in Arzignano, Italy. Full calfskin leather lining and hand-stitched 360° cupsole. Clean with a soft suede brush and treat with water protector.
-          </p>
-        </AccordionItem>
+          <AccordionItem id="material" title="Material info">
+            <p>
+              Mediterranean suede sourced from LWG Gold-certified Gruppo Mastrotto in Arzignano, Italy. Full calfskin leather lining and hand-stitched 360° cupsole. Clean with a soft suede brush and treat with water protector.
+            </p>
+          </AccordionItem>
 
-        <AccordionItem title={`Product reviews (${product.reviewCount} reviews)`}>
-          <p>
-            Rated {product.rating} / 5.0 based on {product.reviewCount} verified customer reviews. Praised for exceptional all-day barefoot comfort, wide toe box freedom, and zero-drop posture.
-          </p>
-        </AccordionItem>
+          <AccordionItem id="reviews" title={`Product reviews (${product.reviewCount} reviews)`}>
+            <p>
+              Rated {product.rating} / 5.0 based on {product.reviewCount} verified customer reviews. Praised for exceptional all-day barefoot comfort, wide toe box freedom, and zero-drop posture.
+            </p>
+          </AccordionItem>
 
-        <AccordionItem title="Removable insole">
-          <p>
-            Features an anatomical memory foam footbed with channeled airflow ventilation for maximum barefoot breathability and sensory ground contact.
-          </p>
-        </AccordionItem>
+          <AccordionItem id="insole" title="Removable insole">
+            <p>
+              Features an anatomical memory foam footbed with channeled airflow ventilation for maximum barefoot breathability and sensory ground contact.
+            </p>
+          </AccordionItem>
+        </AccordionGroup>
       </div>
 
       {/* Size Selection Modal */}

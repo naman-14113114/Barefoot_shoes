@@ -7,39 +7,35 @@ export const HEADER_NAV_LINKS = [
 
 export const FOOTER_COLUMNS = [
   {
-    title: "About BUUDY.",
+    title: "Collections",
     links: [
-      { label: "Our Story", href: "#" },
-      { label: "Portuguese Ateliers", href: "#" },
-      { label: "Zero-Drop Biomechanics", href: "#" },
-      { label: "Sustainability", href: "#" },
+      { label: "LT 03 Suede Sand", href: "/products/lt-03-suede-sand" },
+      { label: "LT 01 Court Lite", href: "/collections/sneakers" },
+      { label: "DS 03 Deck", href: "/collections/sneakers" },
+      { label: "All Barefoot Shoes", href: "/collections/sneakers" },
+      { label: "Size & Fit Guide", href: "/size-guide" },
     ],
   },
   {
     title: "Customer Care",
     links: [
-      { label: "Delivery & Returns", href: "#" },
-      { label: "Size & Measurement Guide", href: "#" },
-      { label: "Shoe Care Instructions", href: "#" },
-      { label: "Track Your Order", href: "#" },
+      { label: "Contact Us", href: "/pages/contact-us" },
+      { label: "FAQs", href: "/pages/faqs" },
+      { label: "Track Your Order", href: "/order-tracking" },
+      { label: "Delivery & Returns", href: "/policies/shipping-policy" },
+      { label: "Shoe Care Guide", href: "/shoe-care" },
+      { label: "Our Story", href: "/pages/about-us" },
     ],
   },
   {
-    title: "Collections",
+    title: "Legal & Policies",
     links: [
-      { label: "LT 03 Suede", href: "/products/lt-03-suede-sand" },
-      { label: "LT 01 Court", href: "/collections/sneakers" },
-      { label: "DS 03 Deck", href: "/collections/sneakers" },
-      { label: "All Barefoot Footwear", href: "/collections/sneakers" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Terms of Service", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "Refund Policy", href: "#" },
-      { label: "Cookie Preferences", href: "#" },
+      { label: "Privacy Policy", href: "/policies/privacy-policy" },
+      { label: "Terms of Service", href: "/policies/terms-of-service" },
+      { label: "Shipping Policy", href: "/policies/shipping-policy" },
+      { label: "Refund Policy", href: "/policies/refund-policy" },
+      { label: "Return Policy", href: "/policies/return-policy" },
+      { label: "Cookies Policy", href: "/policies/cookies-policy" },
     ],
   },
 ];
