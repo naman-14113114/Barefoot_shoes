@@ -1,0 +1,9 @@
+{
+  "name": "@barefoot/eslint-config",
+  "version": "1.0.0",
+  "private": true,
+  "main": "next.mjs",
+  "dependencies": {
+    "eslint-config-next": "16.2.6"
+  }
+}

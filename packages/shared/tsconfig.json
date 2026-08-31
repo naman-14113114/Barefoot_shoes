@@ -1,0 +1,7 @@
+{
+  "extends": "@barefoot/tsconfig/react-library.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["src"]
+}

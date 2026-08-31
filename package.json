@@ -1,0 +1,38 @@
+{
+  "name": "barefoot-shoes-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.1.1",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:uk": "pnpm --filter @barefoot/uk dev",
+    "dev:us": "pnpm --filter @barefoot/us dev",
+    "dev:au": "pnpm --filter @barefoot/au dev",
+    "build": "turbo build",
+    "build:uk": "pnpm --filter @barefoot/uk build",
+    "build:us": "pnpm --filter @barefoot/us build",
+    "build:au": "pnpm --filter @barefoot/au build",
+    "lint": "turbo lint",
+    "lint:uk": "pnpm --filter @barefoot/uk lint",
+    "lint:us": "pnpm --filter @barefoot/us lint",
+    "lint:au": "pnpm --filter @barefoot/au lint",
+    "typecheck": "turbo typecheck",
+    "typecheck:uk": "pnpm --filter @barefoot/uk typecheck",
+    "typecheck:us": "pnpm --filter @barefoot/us typecheck",
+    "typecheck:au": "pnpm --filter @barefoot/au typecheck",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.8.6",
+    "typescript": "^5.8.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
+  }
+}
