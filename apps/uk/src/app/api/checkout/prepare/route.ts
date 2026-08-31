@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       checkoutUrl: bridgeUrl.toString(),
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Could not initialize checkout" },
       { status: 500 }
