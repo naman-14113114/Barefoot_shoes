@@ -7,6 +7,7 @@ import { StickyAddToCartBar } from "@/components/product/StickyAddToCartBar";
 import { FrequentlyBoughtTogether } from "@/components/product/FrequentlyBoughtTogether";
 import { VivoPdpSections } from "@barefoot/ui";
 import { ReviewsSection } from "@/components/product/ReviewsSection";
+import { YouMightAlsoLike } from "@/components/product/YouMightAlsoLike";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({
@@ -54,6 +55,9 @@ export default async function ProductDetailPage({
 
       {/* 5. Customer Reviews Section */}
       <ReviewsSection />
+
+      {/* 6. You Might Also Like Section */}
+      <YouMightAlsoLike />
     </div>
   );
 }
