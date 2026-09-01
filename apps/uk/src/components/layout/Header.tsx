@@ -73,6 +73,13 @@ export function Header() {
             <span className="w-5 h-[1.5px] bg-[#000000] block" />
           </button>
 
+          <Link
+            href="/"
+            className="font-medium text-[20px] md:text-[22px] tracking-[0.08em] text-[#000000] hover:opacity-85 transition-opacity"
+          >
+            BUUDY.
+          </Link>
+
           <nav className="hidden md:flex items-center gap-6 text-[13px] font-normal tracking-normal">
             {HEADER_NAV_LINKS.map((link) => (
               <Link key={link.label} href={link.href} className="link-etq text-[#000000]">
@@ -80,16 +87,6 @@ export function Header() {
               </Link>
             ))}
           </nav>
-        </div>
-
-        {/* Center Brand Mark */}
-        <div className="absolute left-1/2 -translate-x-1/2">
-          <Link
-            href="/"
-            className="font-medium text-[20px] md:text-[22px] tracking-[0.08em] text-[#000000] hover:opacity-85 transition-opacity"
-          >
-            BUUDY.
-          </Link>
         </div>
 
         {/* Right Actions */}

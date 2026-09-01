@@ -36,8 +36,8 @@ export default async function ProductDetailPage({
             <GalleryGrid images={product.galleryImages} title={product.title} />
           </div>
 
-          {/* Right: Buy Box (4/12 = 33.33%) — offset down 175px like ETQ so content sits below header */}
-          <div className="lg:col-span-4 w-full pt-[140px] md:pt-[175px] px-4 md:px-6 lg:px-8">
+          {/* Right: Buy Box (4/12 = 33.33%) */}
+          <div className="lg:col-span-4 w-full pt-20 md:pt-24 lg:pt-[96px] px-4 md:px-6 lg:px-8">
             <StickyBuyBox product={product} />
           </div>
         </div>

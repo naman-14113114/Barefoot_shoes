@@ -220,18 +220,6 @@ const VIVO_STYLES = `
     }
   }
 
-  .vivo-grid-lifestyle {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  @media (min-width: 1024px) {
-    .vivo-grid-lifestyle {
-      grid-template-columns: 7fr 5fr;
-      gap: 24px;
-    }
-  }
-
   .vivo-grid-outsole {
     display: grid;
     grid-template-columns: 1fr;
@@ -262,24 +250,6 @@ const VIVO_STYLES = `
   @media (min-width: 1024px) {
     .vivo-benefit-img {
       height: 200px;
-    }
-  }
-
-  .vivo-lifestyle-img {
-    position: relative;
-    width: 100%;
-    height: 380px;
-    overflow: hidden;
-    background-color: #f4f4f4;
-  }
-  @media (min-width: 640px) {
-    .vivo-lifestyle-img {
-      height: 460px;
-    }
-  }
-  @media (min-width: 1024px) {
-    .vivo-lifestyle-img {
-      height: 540px;
     }
   }
 
@@ -849,29 +819,27 @@ export function ReclaimPotentialSection({
 export function LifestyleMediaGrid({ className }: LifestyleMediaGridProps) {
   return (
     <section className={cn("w-full my-12", className)}>
-      <div className="vivo-pdp-wrap">
-        <div className="vivo-grid-lifestyle">
-          {/* Left: Athlete Lacing Up */}
-          <div className="vivo-lifestyle-img group">
-            <Image
-              src="/media/vivo/lifestyle_gym_lacing.jpg"
-              alt="Athlete tying barefoot performance shoes"
-              fill
-              sizes="(max-width: 1024px) 100vw, 60vw"
-              className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-103"
-            />
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full">
+        {/* Left: Athlete Lacing Up */}
+        <div className="group relative w-full aspect-[4/5] sm:aspect-[16/11] md:aspect-[4/3] lg:aspect-[16/10] overflow-hidden bg-[#f4f4f4]">
+          <Image
+            src="/media/vivo/lifestyle_gym_lacing.jpg"
+            alt="Athlete tying barefoot performance shoes"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-103"
+          />
+        </div>
 
-          {/* Right: Curled Shoe Flexibility Demo */}
-          <div className="vivo-lifestyle-img group">
-            <Image
-              src="/media/vivo/lifestyle_shoe_curled.jpg"
-              alt="Ultra-flexible barefoot shoe curled into loop"
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-103"
-            />
-          </div>
+        {/* Right: Curled Shoe Flexibility Demo */}
+        <div className="group relative w-full aspect-[4/5] sm:aspect-[16/11] md:aspect-[4/3] lg:aspect-[16/10] overflow-hidden bg-[#f4f4f4]">
+          <Image
+            src="/media/vivo/lifestyle_shoe_curled.jpg"
+            alt="Ultra-flexible barefoot shoe curled into loop"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-103"
+          />
         </div>
       </div>
     </section>
