@@ -935,7 +935,7 @@ export function OutsoleTechDiagram({ className }: OutsoleTechDiagramProps) {
 export function VivoPdpSections({
   market = "uk",
   className,
-  showAccordion = true,
+  showAccordion = false,
   showWhyBarefoot = true,
   showHeroBanner = true,
   showReclaimPotential = true,

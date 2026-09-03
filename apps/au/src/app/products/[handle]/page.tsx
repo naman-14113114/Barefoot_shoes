@@ -31,7 +31,7 @@ export default async function ProductDetailPage({
     <div className="w-full pb-16">
       {/* 1. Main Top Hero Section — ETQ 2:1 Asymmetric Grid (images go behind header, zero top padding) */}
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12">
           {/* Left: Gallery (8/12 = 66.66%) — images extend to very top, behind the fixed header */}
           <div className="lg:col-span-8 w-full">
             <GalleryGrid images={product.galleryImages} title={product.title} />
