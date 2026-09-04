@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import type { BarefootProduct } from "@barefoot/shared";
 import { useCart } from "@/components/cart/CartProvider";
 import { SizeSelectorModal } from "./SizeSelectorModal";
+import { useProductSelection } from "./ProductSelectionProvider";
 
 interface StickyAddToCartBarProps {
   product: BarefootProduct;
@@ -11,25 +12,27 @@ interface StickyAddToCartBarProps {
 
 export function StickyAddToCartBar({ product }: StickyAddToCartBarProps) {
   const { addItem } = useCart();
+  const { selectedSizeEu, setSelectedSizeEu } = useProductSelection();
   const [isVisible, setIsVisible] = useState(false);
-  const [selectedSizeEu, setSelectedSizeEu] = useState<number | null>(42);
   const [sizeModalOpen, setSizeModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Trigger when scrolled past 550px (past the main buy button)
-      if (window.scrollY > 550) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      const primaryBuyButton = document.querySelector<HTMLElement>("[data-primary-buy]");
+      setIsVisible(Boolean(primaryBuyButton && primaryBuyButton.getBoundingClientRect().bottom < 0));
     };
+
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
   }, []);
 
   const selectedVariant =
-    product.variants.find((v) => v.sizeEu === selectedSizeEu) || product.variants[0];
+    product.variants.find((variant) => variant.sizeEu === selectedSizeEu) || product.variants[0];
 
   const handleAddToCart = () => {
     if (!selectedSizeEu) {
@@ -55,97 +58,73 @@ export function StickyAddToCartBar({ product }: StickyAddToCartBarProps) {
 
   return (
     <>
-      {/* 1. Desktop Floating Capsule (.product__sticky-bar--desktop) */}
       <div
-        className={`hidden md:flex fixed right-6 bottom-6 z-30 bg-white border border-[#eaeaea] shadow-[0_8px_30px_rgba(0,0,0,0.12)] py-3 px-5 items-center gap-4 transition-all duration-600 ease-[cubic-bezier(0.19,1,0.22,1)] ${
-          isVisible
-            ? "translate-y-0 opacity-100 pointer-events-auto"
-            : "translate-y-24 opacity-0 pointer-events-none"
+        className={`fixed bottom-0 left-0 right-0 z-30 hidden h-[74px] grid-cols-[minmax(190px,1fr)_150px_180px_180px] items-stretch border-t border-[#e5e5e5] bg-white transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] md:grid xl:left-[40%] ${
+          isVisible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-full opacity-0"
         }`}
       >
-        {/* Product Title & Price */}
-        <div className="flex items-center gap-2 text-[13px] whitespace-nowrap">
-          <span className="font-medium text-[#000000]">{product.title} —</span>
-          {product.compareAtPrice > product.price && (
-            <span className="text-[#929292] line-through text-[13px]">
-              {product.currencySymbol}{product.compareAtPrice}
-            </span>
-          )}
-          <span className="font-medium text-[#000000]">
-            {product.currencySymbol}{product.price}
+        <div className="flex min-w-0 items-center gap-2 border-r border-[#e5e5e5] px-5 text-[13px]">
+          <span className="truncate font-semibold">{product.title}</span>
+          <span className="shrink-0 text-[#8a8a8a] line-through">
+            {product.currencySymbol}{product.compareAtPrice}
           </span>
+          <span className="shrink-0">{product.currencySymbol}{product.price}</span>
         </div>
 
-        {/* Colour Pill */}
-        <button
-          type="button"
-          className="px-3.5 py-2 border border-[#eaeaea] text-[12px] font-medium text-[#000000] bg-[#fafafa] hover:border-[#000000] transition-colors whitespace-nowrap"
-        >
-          Colour: {product.colorName}
-        </button>
+        <div className="flex items-center border-r border-[#e5e5e5] px-5 text-[13px]">
+          <span className="mr-2 h-4 w-4 rounded-full border border-[#d7d7d7] bg-white" aria-hidden="true" />
+          {product.colorName}
+        </div>
 
-        {/* Size Pill */}
         <button
           type="button"
           onClick={() => setSizeModalOpen(true)}
-          className="px-3.5 py-2 border border-[#eaeaea] text-[12px] font-medium text-[#000000] bg-white hover:border-[#000000] transition-colors flex items-center gap-2 whitespace-nowrap"
+          className="flex items-center justify-between border-r border-[#e5e5e5] px-5 text-left text-[13px]"
         >
-          <span>
-            {selectedSizeEu
-              ? `Size: EU ${selectedSizeEu} / UK ${selectedVariant.sizeUk}`
-              : "Select size"}
-          </span>
-          <svg className="w-2.5 h-2.5 text-[#000000]" fill="none" viewBox="0 0 10 6">
-            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <span>{selectedSizeEu ? `EU ${selectedSizeEu} / UK ${selectedVariant.sizeUk}` : "Select size"}</span>
+          <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.25" />
           </svg>
         </button>
 
-        {/* Add to Bag Button */}
         <button
           type="button"
           onClick={handleAddToCart}
-          className="px-8 py-2.5 bg-[#000000] text-white text-[13px] font-medium tracking-[0.02em] hover:bg-neutral-800 transition-colors whitespace-nowrap"
+          className="bg-[#111111] text-[13px] font-semibold text-white transition-colors duration-150 hover:bg-[#303030]"
         >
           Add to bag
         </button>
       </div>
 
-      {/* 2. Mobile Fixed Bottom Bar (.product__sticky-bar) */}
       <div
-        className={`md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-[#eaeaea] p-3 grid grid-cols-2 gap-2 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] transition-all duration-600 ease-[cubic-bezier(0.19,1,0.22,1)] ${
-          isVisible
-            ? "translate-y-0 opacity-100 pointer-events-auto"
-            : "translate-y-full opacity-0 pointer-events-none"
+        className={`fixed bottom-0 left-0 right-0 z-30 grid grid-cols-2 gap-2 border-t border-[#e5e5e5] bg-white p-3 pb-[max(12px,env(safe-area-inset-bottom))] transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] md:hidden ${
+          isVisible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-full opacity-0"
         }`}
       >
         <button
           type="button"
           onClick={() => setSizeModalOpen(true)}
-          className="w-full flex items-center justify-between border border-[#eaeaea] px-3 py-2.5 text-[12px] font-medium bg-white text-[#000000] truncate"
+          className="flex min-h-11 items-center justify-between border border-[#e5e5e5] px-4 text-left text-[12px] font-semibold"
         >
-          <span className="truncate">
-            {selectedSizeEu ? `Size: UK ${selectedVariant.sizeUk}` : "Select size"}
-          </span>
-          <svg className="w-2.5 h-2.5 ml-1 flex-none text-[#000000]" fill="none" viewBox="0 0 10 6">
-            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <span>{selectedSizeEu ? `EU ${selectedSizeEu} / UK ${selectedVariant.sizeUk}` : "Select size"}</span>
+          <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.25" />
           </svg>
         </button>
-
         <button
           type="button"
           onClick={handleAddToCart}
-          className="w-full bg-[#000000] text-white py-2.5 text-[12px] font-medium text-center hover:bg-neutral-800 transition-colors"
+          className="min-h-11 bg-[#111111] text-[12px] font-semibold text-white"
         >
-          Add to bag · {product.currencySymbol}{product.price}
+          Add to bag
         </button>
       </div>
 
-      {/* Size Selector Modal */}
       <SizeSelectorModal
         isOpen={sizeModalOpen}
         onClose={() => setSizeModalOpen(false)}
         selectedSize={selectedSizeEu}
-        onSelectSize={(size) => setSelectedSizeEu(size)}
+        onSelectSize={setSelectedSizeEu}
       />
     </>
   );

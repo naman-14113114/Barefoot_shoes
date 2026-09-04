@@ -12,22 +12,34 @@
     --color-subtle: #929292;
     --color-accent-blue: #0080ff;
     --ease-etq: cubic-bezier(0.19, 1, 0.22, 1);
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   body {
     background-color: #ffffff;
     color: #000000;
-    font-family: var(--font-graphik), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    font-kerning: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :focus-visible {
+    outline: 2px solid #111111;
+    outline-offset: 3px;
   }
 }
 
 /* ETQ Signature Link Underline Animation */
 .link-etq {
   position: relative;
-  display: inline-block;
   white-space: nowrap;
   color: inherit;
   text-decoration: none;
@@ -60,4 +72,47 @@
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.gallery-zoom-cursor {
+  cursor: url("/cursor-zoom-in.svg") 20 20, zoom-in;
+}
+
+@keyframes etq-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes etq-menu-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.etq-overlay-in {
+  animation: etq-overlay-in 300ms var(--ease-out-expo) both;
+}
+
+.etq-menu-panel-in {
+  animation: etq-menu-panel-in 420ms var(--ease-etq) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

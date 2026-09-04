@@ -1,5 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PRODUCTS } from "@/data/products";
 import { market } from "@/data/market";
@@ -10,6 +11,7 @@ import { FrequentlyBoughtTogether } from "@/components/product/FrequentlyBoughtT
 import { VivoPdpSections, LifestyleMarquee } from "@barefoot/ui";
 import { ReviewsSection } from "@/components/product/ReviewsSection";
 import { YouMightAlsoLike } from "@/components/product/YouMightAlsoLike";
+import { ProductSelectionProvider } from "@/components/product/ProductSelectionProvider";
 
 export function generateStaticParams() {
   return PRODUCTS.map((p) => ({
@@ -125,22 +127,41 @@ export default async function ProductDetailPage({
       />
 
       {/* 1. Main Top Hero Section — ETQ 2:1 Asymmetric Grid (images go behind header, zero top padding) */}
-      <div className="max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12">
+      <ProductSelectionProvider>
+        <div className="grid grid-cols-1 lg:grid-cols-3">
           {/* Left: Gallery (8/12 = 66.66%) — images extend to very top, behind the fixed header */}
-          <div className="lg:col-span-8 w-full">
+          <div className="relative w-full lg:col-span-2">
+            <div className="h-[50px] lg:hidden" aria-hidden="true" />
+            <Link
+              href="/collections/sneakers"
+              className="absolute left-10 top-[94px] z-20 hidden items-center gap-3 text-[13px] font-semibold lg:flex"
+            >
+              <svg className="h-3 w-3" fill="none" viewBox="0 0 13 13" aria-hidden="true">
+                <path d="M10.432 1.725 5.844 6.508l4.587 4.767L9.154 12.5 3.41 6.508 9.155.5l1.277 1.225z" fill="currentColor" />
+              </svg>
+              <span className="border-l border-[#d8d8d8] pl-3">Bestsellers</span>
+            </Link>
+            <Link
+              href="/collections/sneakers"
+              className="flex h-[48px] items-center gap-3 px-4 text-[13px] font-semibold lg:hidden"
+            >
+              <svg className="h-3 w-3" fill="none" viewBox="0 0 13 13" aria-hidden="true">
+                <path d="M10.432 1.725 5.844 6.508l4.587 4.767L9.154 12.5 3.41 6.508 9.155.5l1.277 1.225z" fill="currentColor" />
+              </svg>
+              <span className="border-l border-[#d8d8d8] pl-3">Bestsellers</span>
+            </Link>
             <GalleryGrid images={product.galleryImages} title={product.title} />
           </div>
 
           {/* Right: Buy Box (4/12 = 33.33%) */}
-          <div className="lg:col-span-4 w-full pt-20 md:pt-24 lg:pt-[96px] px-4 md:px-6 lg:px-8">
+          <div className="w-full px-4 pb-10 pt-7 sm:px-8 lg:px-[clamp(40px,5vw,80px)] lg:pb-0 lg:pt-[132px]">
             <StickyBuyBox product={product} />
           </div>
         </div>
-      </div>
 
       {/* 2. Floating Sticky Add to Cart Bar (Revealed past main fold) */}
-      <StickyAddToCartBar product={product} />
+        <StickyAddToCartBar product={product} />
+      </ProductSelectionProvider>
 
       {/* 3. Auto-Moving Lifestyle Image Marquee Carousel */}
       <LifestyleMarquee />

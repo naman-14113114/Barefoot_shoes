@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     images: ["/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-wide-toe-box-hero.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
   },
 };
 
@@ -70,7 +70,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-GB">
-      <body className="min-h-screen flex flex-col bg-white text-[#000000] font-sans antialiased">
+      <body className="min-h-screen flex flex-col bg-white text-[#000000] antialiased">
         <CartProvider>
           <AnnouncementBar />
           <Header />

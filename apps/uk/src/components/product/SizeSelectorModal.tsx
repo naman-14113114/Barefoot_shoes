@@ -1,7 +1,9 @@
 "use client";
 
-import React from "react";
-import { Modal } from "@barefoot/ui";
+import React, { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import Link from "next/link";
+import { X } from "lucide-react";
 import { BAREFOOT_SIZE_MATRIX } from "@barefoot/shared";
 
 interface SizeSelectorModalProps {
@@ -17,42 +19,98 @@ export function SizeSelectorModal({
   selectedSize,
   onSelectSize,
 }: SizeSelectorModalProps) {
-  return (
-    <Modal isOpen={isOpen} onClose={onClose} title="Select Your Size">
-      <div className="space-y-4">
-        <p className="text-[12px] text-[#767676]">
-          All pairs fit true to size. If you are between sizes, we recommend taking the larger size.
-        </p>
+  const [mounted, setMounted] = useState(false);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
-        <div className="divide-y divide-[#eaeaea] border border-[#eaeaea]">
-          <div className="grid grid-cols-4 p-2.5 bg-[#f5f5f5] text-[11px] font-medium text-[#000000]">
-            <span>EU</span>
-            <span>UK</span>
-            <span>US Men</span>
-            <span>Length (mm)</span>
-          </div>
+  useEffect(() => setMounted(true), []);
 
-          {BAREFOOT_SIZE_MATRIX.map((s) => (
+  useEffect(() => {
+    if (!isOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, [isOpen, onClose]);
+
+  if (!mounted) return null;
+
+  return createPortal(
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Choose size"
+      aria-hidden={!isOpen}
+      inert={isOpen ? undefined : true}
+      className={`fixed inset-0 z-[70] transition-opacity duration-300 ${
+        isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+      }`}
+    >
+      <button
+        type="button"
+        aria-label="Close size selector"
+        onClick={onClose}
+        className="absolute inset-0 bg-black/50"
+      />
+
+      <aside
+        className={`absolute inset-y-0 right-0 flex w-full max-w-[480px] flex-col bg-white transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="relative flex h-[72px] shrink-0 items-center justify-center border-b border-[#e5e5e5] px-6">
+          <h2 className="text-[14px] font-semibold">Choose size</h2>
+          <button
+            ref={closeButtonRef}
+            type="button"
+            onClick={onClose}
+            className="absolute right-4 flex h-11 w-11 items-center justify-center"
+            aria-label="Close size selector"
+          >
+            <X size={22} strokeWidth={1.4} />
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-4 py-6">
+          {BAREFOOT_SIZE_MATRIX.map((size) => (
             <button
-              key={s.eu}
+              key={size.eu}
               type="button"
-              disabled={!s.inStock}
+              disabled={!size.inStock}
               onClick={() => {
-                onSelectSize(s.eu);
+                onSelectSize(size.eu);
                 onClose();
               }}
-              className={`grid grid-cols-4 w-full p-2.5 text-left text-[12px] hover:bg-[#fafafa] transition-colors disabled:opacity-30 disabled:cursor-not-allowed ${
-                selectedSize === s.eu ? "bg-[#f5f5f5] font-medium text-[#000000]" : "text-[#767676]"
+              className={`mb-1 flex min-h-[48px] w-full items-center px-3 text-left text-[13px] transition-colors hover:bg-[#f5f5f5] disabled:cursor-not-allowed disabled:opacity-35 ${
+                selectedSize === size.eu ? "border border-[#e1e1e1] bg-[#fafafa]" : "border border-transparent"
               }`}
             >
-              <span className="font-medium text-[#000000]">EU {s.eu}</span>
-              <span>UK {s.uk}</span>
-              <span>US {s.usMen}</span>
-              <span>{s.footLengthMm} mm</span>
+              EU {size.eu} | US {size.usMen} | UK {size.uk}
+              {size.lowStockCount && <span className="ml-auto text-[11px] text-[#777777]">Low stock</span>}
             </button>
           ))}
         </div>
-      </div>
-    </Modal>
+
+        <div className="shrink-0 border-t border-[#e5e5e5] p-7">
+          <p className="mb-4 text-[13px]">True to size. Between sizes, take the bigger one.</p>
+          <Link
+            href="/size-guide"
+            onClick={onClose}
+            className="flex h-[50px] w-full items-center justify-center border border-[#e5e5e5] text-[13px] font-semibold hover:border-[#111111]"
+          >
+            View size guide
+          </Link>
+        </div>
+      </aside>
+    </div>,
+    document.body,
   );
 }
