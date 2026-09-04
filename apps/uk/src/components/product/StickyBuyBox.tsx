@@ -85,7 +85,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         <p className="mt-1 text-[14px] text-[#979797]">{product.subtitle}</p>
       </div>
 
-      <div className="mt-8 flex items-center justify-between border-b border-[#e5e5e5] pb-8 text-[15px]">
+      <div className="mt-8 flex items-center justify-between border-b border-[#e5e5e5] pb-8 text-[15px] lg:mt-[clamp(20px,3.56vh,32px)] lg:pb-[clamp(20px,3.56vh,32px)]">
         <div className="flex items-baseline gap-2">
           {product.compareAtPrice > product.price && (
             <span className="font-normal text-[#929292] line-through decoration-[1px]">
@@ -99,10 +99,10 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         {product.badge && <span className="text-[12px] font-semibold">{product.badge}</span>}
       </div>
 
-      <div className="pt-7">
+      <div className="pt-7 lg:pt-[clamp(18px,3.12vh,28px)]">
         <p className="text-[14px] font-semibold">{product.colorName}</p>
         <p className="mt-1 text-[14px]">{product.subtitle}</p>
-        <div className="mt-4 grid grid-cols-6 gap-1">
+        <div className="mt-4 grid grid-cols-6 gap-1 lg:mt-[clamp(10px,1.78vh,16px)]">
           {colorways.slice(0, 5).map((colour) => (
             <Link
               key={colour.name}
@@ -128,7 +128,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         </div>
       </div>
 
-      <div className="mt-7">
+      <div className="mt-7 lg:mt-[clamp(18px,3.12vh,28px)]">
         <button
           type="button"
           onClick={() => setSizeModalOpen(true)}
@@ -147,7 +147,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         <button
           type="button"
           onClick={() => setSizeModalOpen(true)}
-          className="mx-auto mt-4 block text-[13px] underline decoration-[#999999] underline-offset-4"
+          className="mx-auto mt-4 block text-[13px] underline decoration-[#999999] underline-offset-4 lg:mt-[clamp(10px,1.78vh,16px)]"
         >
           Not sure on size? Find your barefoot size in 60 seconds.
         </button>
@@ -157,7 +157,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         type="button"
         data-primary-buy
         onClick={handleAddToCart}
-        className="mt-5 flex h-[46px] w-full items-center justify-center bg-[#111111] text-[13px] font-semibold text-white transition-colors duration-150 hover:bg-[#303030] active:bg-[#444444]"
+        className="mt-5 flex h-[46px] w-full items-center justify-center bg-[#111111] text-[13px] font-semibold text-white transition-colors duration-150 hover:bg-[#303030] active:bg-[#444444] lg:mt-[clamp(12px,2.22vh,20px)]"
       >
         Add to bag
       </button>

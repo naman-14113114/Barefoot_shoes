@@ -154,7 +154,7 @@ export default async function ProductDetailPage({
           </div>
 
           {/* Right: Buy Box (4/12 = 33.33%) */}
-          <div className="w-full px-4 pb-10 pt-7 sm:px-8 lg:px-[clamp(40px,5vw,80px)] lg:pb-0 lg:pt-[132px]">
+          <div className="w-full px-4 pb-10 pt-7 sm:px-8 lg:px-[clamp(40px,5vw,80px)] lg:pb-0 lg:pt-[clamp(84px,14.67vh,132px)]">
             <StickyBuyBox product={product} />
           </div>
         </div>
