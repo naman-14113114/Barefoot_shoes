@@ -72,7 +72,24 @@ export function StickyAddToCartBar({ product }: StickyAddToCartBarProps) {
         </div>
 
         <div className="flex items-center border-r border-[#e5e5e5] px-5 text-[13px]">
-          <span className="mr-2 h-4 w-4 rounded-full border border-[#d7d7d7] bg-white" aria-hidden="true" />
+          <span
+            className={`mr-2 h-4 w-4 rounded-full border ${
+              product.colorName.toLowerCase() === "black"
+                ? "border-[#111111] bg-[#111111]"
+                : product.colorName.toLowerCase() === "gray" || product.colorName.toLowerCase() === "grey"
+                ? "border-[#7e8287] bg-[#7e8287]"
+                : product.colorName.toLowerCase() === "blue"
+                ? "border-[#0284c7] bg-[#0284c7]"
+                : product.colorName.toLowerCase() === "sand"
+                ? "border-[#d8c3a5] bg-[#d8c3a5]"
+                : product.colorName.toLowerCase() === "blueberry"
+                ? "border-[#3b5998] bg-[#3b5998]"
+                : product.colorName.toLowerCase() === "chocolate"
+                ? "border-[#4a2e18] bg-[#4a2e18]"
+                : "border-[#d7d7d7] bg-white"
+            }`}
+            aria-hidden="true"
+          />
           {product.colorName}
         </div>
 

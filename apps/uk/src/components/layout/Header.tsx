@@ -123,9 +123,9 @@ const MENU_COLUMNS: Record<MenuLabel, { title: string; links: { label: string; h
 
 const EDITORIAL_TILES = [
   {
-    title: "LT 03 Premium Nappa White",
+    title: "Drifters Barefoot Shoes",
     caption: "Our barefoot bestseller.",
-    href: "/products/lt-03-premium-nappa-white",
+    href: "/products/drifters-barefoot-shoes-white",
     image: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-studio-editorial-pair.jpg",
   },
   {

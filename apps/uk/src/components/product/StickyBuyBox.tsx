@@ -21,7 +21,30 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
   const selectedVariant =
     product.variants.find((v) => v.sizeEu === selectedSizeEu) || product.variants[0];
 
-  const colorways = [
+  const driftersColorways = [
+    {
+      name: "White",
+      handle: "drifters-barefoot-shoes-white",
+      img: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Black",
+      handle: "drifters-barefoot-shoes-black",
+      img: "/media/products/drifters-black/buudy-barefoot-shoes-drifters-black-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Gray",
+      handle: "drifters-barefoot-shoes-gray",
+      img: "/media/products/drifters-gray/buudy-barefoot-shoes-drifters-gray-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Blue",
+      handle: "drifters-barefoot-shoes-blue",
+      img: "/media/products/drifters-blue/buudy-barefoot-shoes-drifters-blue-wide-toe-box-hero.jpg",
+    },
+  ];
+
+  const defaultColorways = [
     {
       name: "White",
       handle: "lt-03-premium-nappa-white",
@@ -53,6 +76,8 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_052Angel3_v1_3840x.jpg?v=1700500234",
     },
   ];
+
+  const colorways = product.handle.startsWith("drifters") ? driftersColorways : defaultColorways;
 
   const handleAddToCart = () => {
     if (!selectedSizeEu) {
@@ -102,8 +127,10 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       <div className="pt-7 lg:pt-[clamp(18px,3.12vh,28px)]">
         <p className="text-[14px] font-semibold">{product.colorName}</p>
         <p className="mt-1 text-[14px]">{product.subtitle}</p>
-        <div className="mt-4 grid grid-cols-6 gap-1 lg:mt-[clamp(10px,1.78vh,16px)]">
-          {colorways.slice(0, 5).map((colour) => (
+        <div className={`mt-4 grid gap-1.5 lg:mt-[clamp(10px,1.78vh,16px)] ${
+          colorways.length <= 4 ? "grid-cols-4" : "grid-cols-6"
+        }`}>
+          {colorways.slice(0, colorways.length > 5 ? 5 : colorways.length).map((colour) => (
             <Link
               key={colour.name}
               href={`/products/${colour.handle}`}
@@ -115,16 +142,18 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
                   : "border-transparent hover:border-[#b7b7b7]"
               }`}
             >
-              <Image src={colour.img} alt="" fill sizes="72px" className="object-cover" />
+              <Image src={colour.img} alt={colour.name} fill sizes="72px" className="object-cover" />
             </Link>
           ))}
-          <Link
-            href={`/products/${colorways[5].handle}`}
-            className="flex aspect-square items-center justify-center border border-[#e5e5e5] text-[13px] font-semibold hover:border-[#111111]"
-            aria-label="View one more colour"
-          >
-            +1
-          </Link>
+          {colorways.length > 5 && (
+            <Link
+              href={`/products/${colorways[5].handle}`}
+              className="flex aspect-square items-center justify-center border border-[#e5e5e5] text-[13px] font-semibold hover:border-[#111111]"
+              aria-label="View one more colour"
+            >
+              +{colorways.length - 5}
+            </Link>
+          )}
         </div>
       </div>
 
