@@ -5,7 +5,7 @@ import { GalleryGrid } from "@/components/product/GalleryGrid";
 import { StickyBuyBox } from "@/components/product/StickyBuyBox";
 import { StickyAddToCartBar } from "@/components/product/StickyAddToCartBar";
 import { FrequentlyBoughtTogether } from "@/components/product/FrequentlyBoughtTogether";
-import { VivoPdpSections } from "@barefoot/ui";
+import { VivoPdpSections, LifestyleMarquee } from "@barefoot/ui";
 import { ReviewsSection } from "@/components/product/ReviewsSection";
 import { YouMightAlsoLike } from "@/components/product/YouMightAlsoLike";
 
@@ -47,7 +47,10 @@ export default async function ProductDetailPage({
       {/* 2. Floating Sticky Add to Cart Bar (Revealed past main fold) */}
       <StickyAddToCartBar product={product} />
 
-      {/* 3. Frequently Bought Together Carousel */}
+      {/* 3. Auto-Moving Lifestyle Image Marquee Carousel */}
+      <LifestyleMarquee />
+
+      {/* 4. Frequently Bought Together Carousel */}
       <FrequentlyBoughtTogether />
 
       {/* 4. Vivobarefoot Performance Features & Technical Sections */}

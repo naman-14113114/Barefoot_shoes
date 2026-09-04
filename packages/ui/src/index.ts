@@ -9,3 +9,4 @@ export * from "./components/FastImage";
 export * from "./components/FastVideo";
 export * from "./components/Icons";
 export * from "./components/VivoPdpSections";
+export * from "./components/LifestyleMarquee";
