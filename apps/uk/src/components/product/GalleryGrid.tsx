@@ -30,17 +30,17 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
   return (
     <>
       <div className="w-full">
-        {/* 1. Desktop: 2-Column Staggered Vertical Grid (All 14 Images) */}
+        {/* 1. Desktop: 2-Column Staggered Vertical Grid (All Gallery Images) */}
         <div className="hidden md:grid grid-cols-2 gap-2">
           {images.map((src, idx) => (
             <div
               key={idx}
               onClick={() => setActiveZoomIdx(idx)}
-              className="group relative w-full aspect-[4/5] pb-[118%] bg-[#f5f5f5] cursor-zoom-in overflow-hidden border border-[#eaeaea]"
+              className="group relative w-full aspect-[4/5] bg-[#f5f5f5] cursor-zoom-in overflow-hidden border border-[#eaeaea]"
             >
               <Image
                 src={src}
-                alt={`${title} - view ${idx + 1}`}
+                alt={`${title} — Angle ${idx + 1} Barefoot Minimalist Shoes UK (buudy.co.uk)`}
                 fill
                 priority={idx < 4}
                 loading={idx < 4 ? "eager" : "eager"}
@@ -75,11 +75,11 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
               <div
                 key={idx}
                 onClick={() => setActiveZoomIdx(idx)}
-                className="relative flex-none w-full aspect-[4/5] pb-[115%] bg-[#eaeaea] snap-center overflow-hidden"
+                className="relative flex-none w-full aspect-[4/5] bg-[#eaeaea] snap-center overflow-hidden"
               >
                 <Image
                   src={src}
-                  alt={`${title} - view ${idx + 1}`}
+                  alt={`${title} — Angle ${idx + 1} Barefoot Minimalist Shoes UK (buudy.co.uk)`}
                   fill
                   priority={idx === 0}
                   loading="eager"

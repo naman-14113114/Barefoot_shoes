@@ -1,6 +1,8 @@
 import React from "react";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PRODUCTS } from "@/data/products";
+import { market } from "@/data/market";
 import { GalleryGrid } from "@/components/product/GalleryGrid";
 import { StickyBuyBox } from "@/components/product/StickyBuyBox";
 import { StickyAddToCartBar } from "@/components/product/StickyAddToCartBar";
@@ -15,6 +17,60 @@ export function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ handle: string }>;
+}): Promise<Metadata> {
+  const { handle } = await params;
+  const product = PRODUCTS.find((p) => p.handle === handle);
+
+  if (!product) {
+    return {
+      title: "Product Not Found | BUUDY. UK",
+      description: "The requested barefoot footwear model could not be found.",
+    };
+  }
+
+  const pageTitle = `${product.title} — Zero-Drop Barefoot Trainer`;
+  const pageDescription = `${product.description} Handcrafted with zero-drop biomechanics, anatomical wide toe box, and ultra-flexible sole. Available now for £${product.price} with tracked UK delivery on buudy.co.uk.`;
+  const productUrl = `/products/${product.handle}`;
+  const ogImageUrl = product.primaryImage;
+
+  return {
+    title: pageTitle,
+    description: pageDescription,
+    alternates: {
+      canonical: productUrl,
+      languages: {
+        "en-GB": productUrl,
+      },
+    },
+    openGraph: {
+      siteName: "BUUDY.",
+      type: "website",
+      url: productUrl,
+      locale: "en_GB",
+      title: `${pageTitle} | BUUDY. UK`,
+      description: pageDescription,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 1500,
+          alt: `${product.title} - Barefoot Shoes UK`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.title} | BUUDY. UK`,
+      description: pageDescription,
+      images: [ogImageUrl],
+    },
+  };
+}
+
 export default async function ProductDetailPage({
   params,
 }: {
@@ -27,8 +83,47 @@ export default async function ProductDetailPage({
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.title,
+    description: product.description,
+    image: product.galleryImages.map((img) =>
+      img.startsWith("http") ? img : `${market.siteUrl}${img}`
+    ),
+    brand: {
+      "@type": "Brand",
+      name: "BUUDY.",
+    },
+    offers: {
+      "@type": "Offer",
+      url: `${market.siteUrl}/products/${product.handle}`,
+      priceCurrency: market.currency,
+      price: product.price.toFixed(2),
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
+      seller: {
+        "@type": "Organization",
+        name: "BUUDY. UK",
+      },
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: product.rating.toString(),
+      reviewCount: product.reviewCount.toString(),
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
   return (
     <div className="w-full pb-16">
+      {/* Schema.org Product Structured Data for Bing UK & Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* 1. Main Top Hero Section — ETQ 2:1 Asymmetric Grid (images go behind header, zero top padding) */}
       <div className="max-w-[1440px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12">
