@@ -140,4 +140,31 @@ This file is an append-only operational history for `E:\1st YEAR DTU\New folder\
 - Image Processing: Converted to exact 4:5 aspect ratio (`1200x1500`) using Lanczos resampling and high-quality progressive JPEG compression (`quality=92`).
 - Monorepo Sync & Build: Deployed across `apps/uk`, `apps/us`, and `apps/au`, synchronized `products.ts` gallery mapping, purged legacy obsolete assets in `clouders-beige/`, and verified full Turborepo SSG compilation (153 static pages prerendered with 0 errors).
 
+## 2026-09-05 18:30:00 +05:30 - Clouders Gray 20-Asset Master Gallery & ETQ Sequence Integration
+
+- Repository/route: `E:\1st YEAR DTU\New folder\Barefoot_shoes_vercel`; `https://barefoot-shoes-uk.vercel.app/products/clouders-barefoot-shoes-gray`.
+- Scope: Deployed 20 master 4:5 aspect ratio (`1200x1500`) assets for `clouders-barefoot-shoes-gray` adhering 1:1 to ETQ Amsterdam reference sequence (`lt-01-shades-suede-cement-grey`):
+  1. `buudy-barefoot-shoes-clouders-gray-wide-toe-box-hero.jpg` (Position 1: Lateral side profile solo hero on studio background)
+  2. `buudy-barefoot-shoes-clouders-gray-on-foot-architectural-standing.jpg` (Position 2: On-foot standing perspective near modern window with relaxed trousers)
+  3. `buudy-barefoot-shoes-clouders-gray-on-foot-stone-step-climb.jpg` (Position 3: On-foot step climbing action on dark stone wall texture)
+  4. `buudy-barefoot-shoes-clouders-gray-on-foot-stone-ledge-stride.jpg` (Position 4: On-foot dynamic stride stepping onto dark stone block ledge with cropped trousers)
+  5. `buudy-barefoot-shoes-clouders-gray-on-foot-sunlit-steps.jpg` (Position 5: On-foot walking down sunlit architectural sandstone steps in black trousers)
+  6. `buudy-barefoot-shoes-clouders-gray-on-foot-top-down-perspective.jpg` (Position 6: On-foot bird's-eye top-down perspective on smooth floor)
+  7. `buudy-barefoot-shoes-clouders-gray-macro-lacing-toggle-detail.jpg` (Position 7: Macro close-up speed bungee lacing system, clear cord lock toggle, and knit throat)
+  8. `buudy-barefoot-shoes-clouders-gray-macro-heel-counter-rear-sole.jpg` (Position 8: Macro rear heel counter detail, reflective pull tab, and zero-drop outsole)
+  9. `buudy-barefoot-shoes-clouders-gray-macro-outsole-heel-tread.jpg` (Position 9: Macro close-up articulated barefoot outsole bottom tread and toe pods)
+  10. `buudy-barefoot-shoes-clouders-gray-dual-heel-perspective-pair.jpg` (Position 10: Dual rear heel counter perspective pair showing zero-drop alignment)
+  11. `buudy-barefoot-shoes-clouders-gray-duo-top-profile-layout.jpg` (Position 11: Duo studio display featuring top-down view and medial side profile)
+  12. `buudy-barefoot-shoes-clouders-gray-on-foot-spiral-staircase-walking.jpg` (Position 12: On-foot walking down spiral architectural staircase with tan trousers)
+  13. `buudy-barefoot-shoes-clouders-gray-model-full-body-lifestyle.jpg` (Position 13: Full body male model standing in grey polo on neutral studio background)
+  14. `buudy-barefoot-shoes-clouders-gray-in-hand-featherlight-display.jpg` (Position 14: In-hand display demonstrating ultra-lightweight construction and flexible silhouette)
+  15. `buudy-barefoot-shoes-clouders-gray-herringbone-wood-pair-top-down.jpg` (Position 15: Overhead top-down view of pair on herringbone oak hardwood floor)
+  16. `buudy-barefoot-shoes-clouders-gray-herringbone-wood-toe-box-macro.jpg` (Position 16: Macro angle of anatomical wide toe box and wave knit upper on oak flooring)
+  17. `buudy-barefoot-shoes-clouders-gray-herringbone-wood-heel-counter.jpg` (Position 17: Macro angle of reinforced suede heel counter and pull tab on hardwood floor)
+  18. `buudy-barefoot-shoes-clouders-gray-herringbone-wood-tongue-laces.jpg` (Position 18: Macro texture detail of breathable mesh tongue and speed laces on wood floor)
+  19. `buudy-barefoot-shoes-clouders-gray-overhead-bungee-throat-angle.jpg` (Position 19: Overhead high-angle perspective of bungee throat, collar, and wave pattern)
+  20. `buudy-barefoot-shoes-clouders-gray-outsole-bottom-tread-grip.jpg` (Position 20: Full outsole bottom tread perspective displaying multi-directional grip patterns)
+- Image Processing: Converted to exact 4:5 aspect ratio (`1200x1500`) with Lanczos resampling and progressive JPEG compression (`quality=92`).
+- Monorepo Sync & Build: Deployed across `apps/uk`, `apps/us`, and `apps/au`, synchronized `products.ts` gallery mapping, purged legacy obsolete assets in `clouders-gray/`, and verified full Turborepo SSG compilation (153 static pages prerendered with 0 errors).
+
 
