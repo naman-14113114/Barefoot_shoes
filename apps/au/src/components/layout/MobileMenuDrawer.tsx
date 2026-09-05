@@ -131,7 +131,7 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
       <Link href="/collections/sneakers" onClick={onClose} className="block p-6">
         <div className="relative aspect-[3/2] overflow-hidden bg-[#eeeeee]">
           <Image
-            src="/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-studio-editorial-pair.jpg"
+            src="/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-coastal-stone-editorial-pair.jpg"
             alt="BUUDY barefoot trainers"
             fill
             sizes="calc(100vw - 56px)"

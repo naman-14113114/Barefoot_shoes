@@ -129,7 +129,7 @@ const EDITORIAL_TILES = [
     title: "Drifters Barefoot Shoes",
     caption: "Our barefoot bestseller.",
     href: "/products/drifters-barefoot-shoes-white",
-    image: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-studio-editorial-pair.jpg",
+    image: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-coastal-stone-editorial-pair.jpg",
   },
   {
     title: "Built to move",

@@ -44,7 +44,7 @@ export const metadata: Metadata = {
       "Handcrafted barefoot footwear. Combining anatomical zero-drop biomechanics with Italian nappa leather, Mediterranean suede, and ultra-flexible soles.",
     images: [
       {
-        url: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-wide-toe-box-hero.jpg",
+        url: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-model-studio-standing-hero.jpg",
         width: 1200,
         height: 1500,
         alt: "BUUDY. Luxury Minimalist Barefoot Footwear UK",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "BUUDY. — Luxury Minimalist Barefoot Footwear | UK",
     description:
       "Handcrafted barefoot footwear with anatomical zero-drop biomechanics and ultra-flexible soles.",
-    images: ["/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-wide-toe-box-hero.jpg"],
+    images: ["/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-model-studio-standing-hero.jpg"],
   },
   icons: {
     icon: "/favicon.svg",
