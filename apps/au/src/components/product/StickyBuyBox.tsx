@@ -35,7 +35,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     {
       name: "Gray",
       handle: "drifters-barefoot-shoes-gray",
-      img: "/media/products/drifters-gray/buudy-barefoot-shoes-drifters-gray-wide-toe-box-hero.jpg",
+      img: "/media/products/drifters-gray/buudy-barefoot-shoes-drifters-gray-model-studio-standing-hero.jpg",
     },
     {
       name: "Blue",
