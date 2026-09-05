@@ -25,18 +25,18 @@ const MENU_COLUMNS: Record<MenuLabel, { title: string; links: { label: string; h
     {
       title: "Shop by collection",
       links: [
-        { label: "New", href: "/collections/sneakers" },
-        { label: "Bestsellers", href: "/collections/sneakers" },
-        { label: "LT 03", href: "/products/lt-03-premium-nappa-white" },
-        { label: "LT 01", href: "/products/lt-01-court-lite-white" },
+        { label: "Drifters Barefoot", href: "/products/drifters-barefoot-shoes-white" },
+        { label: "Clouders Barefoot", href: "/products/clouders-barefoot-shoes-white" },
+        { label: "Roamers Barefoot", href: "/products/roamers-barefoot-shoes-ash-gray" },
+        { label: "All footwear", href: "/collections/sneakers" },
       ],
     },
     {
       title: "Shop by material",
       links: [
-        { label: "Premium Nappa", href: "/products/lt-03-premium-nappa-white" },
-        { label: "Mediterranean Suede", href: "/products/lt-03-suede-sand" },
-        { label: "Full Grain", href: "/products/ds-03-all-chocolate" },
+        { label: "Breathable Diamond Mesh", href: "/products/drifters-barefoot-shoes-white" },
+        { label: "Athletic Flex Mesh", href: "/products/clouders-barefoot-shoes-white" },
+        { label: "Water-Resistant Hybrid", href: "/products/roamers-barefoot-shoes-ash-gray" },
         { label: "Barefoot performance", href: "/collections/sneakers" },
       ],
     },
@@ -45,8 +45,9 @@ const MENU_COLUMNS: Record<MenuLabel, { title: string; links: { label: string; h
     {
       title: "Everyday",
       links: [
-        { label: "Minimal trainers", href: "/collections/sneakers" },
-        { label: "Court silhouettes", href: "/products/lt-01-court-lite-white" },
+        { label: "Drifters Barefoot", href: "/products/drifters-barefoot-shoes-white" },
+        { label: "Clouders Gym Trainer", href: "/products/clouders-barefoot-shoes-white" },
+        { label: "Roamers Trail Shoe", href: "/products/roamers-barefoot-shoes-ash-gray" },
         { label: "Walking shoes", href: "/collections/sneakers" },
       ],
     },
@@ -54,7 +55,9 @@ const MENU_COLUMNS: Record<MenuLabel, { title: string; links: { label: string; h
       title: "Featured",
       links: [
         { label: "New arrivals", href: "/collections/sneakers" },
-        { label: "Most wanted", href: "/products/lt-03-premium-nappa-white" },
+        { label: "Drifters White", href: "/products/drifters-barefoot-shoes-white" },
+        { label: "Clouders White", href: "/products/clouders-barefoot-shoes-white" },
+        { label: "Roamers Ash Gray", href: "/products/roamers-barefoot-shoes-ash-gray" },
         { label: "All menswear", href: "/collections/sneakers" },
       ],
     },

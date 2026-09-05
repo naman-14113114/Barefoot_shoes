@@ -13,10 +13,12 @@ interface MobileMenuDrawerProps {
 }
 
 const SUBMENU_LINKS = [
-  { label: "LT 03 Premium Nappa White", href: "/products/lt-03-premium-nappa-white" },
-  { label: "LT 03 Suede Sand", href: "/products/lt-03-suede-sand" },
-  { label: "LT 03 Suede Blueberry", href: "/products/lt-03-suede-blueberry" },
-  { label: "LT 01 Court Lite White", href: "/products/lt-01-court-lite-white" },
+  { label: "Drifters Barefoot", href: "/products/drifters-barefoot-shoes-white" },
+  { label: "Clouders Barefoot", href: "/products/clouders-barefoot-shoes-white" },
+  { label: "Roamers Barefoot", href: "/products/roamers-barefoot-shoes-ash-gray" },
+  { label: "Drifters Black", href: "/products/drifters-barefoot-shoes-black" },
+  { label: "Clouders Black", href: "/products/clouders-barefoot-shoes-black" },
+  { label: "Roamers Black Coal", href: "/products/roamers-barefoot-shoes-black-coal" },
   { label: "All footwear", href: "/collections/sneakers" },
 ];
 

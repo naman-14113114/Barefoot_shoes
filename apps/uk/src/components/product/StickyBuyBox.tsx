@@ -44,6 +44,62 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     },
   ];
 
+  const cloudersColorways = [
+    {
+      name: "White",
+      handle: "clouders-barefoot-shoes-white",
+      img: "/media/products/clouders-white/buudy-barefoot-shoes-clouders-white-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Beige",
+      handle: "clouders-barefoot-shoes-beige",
+      img: "/media/products/clouders-beige/buudy-barefoot-shoes-clouders-beige-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Black",
+      handle: "clouders-barefoot-shoes-black",
+      img: "/media/products/clouders-black/buudy-barefoot-shoes-clouders-black-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Sky Blue",
+      handle: "clouders-barefoot-shoes-sky-blue",
+      img: "/media/products/clouders-sky-blue/buudy-barefoot-shoes-clouders-sky-blue-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Gray",
+      handle: "clouders-barefoot-shoes-gray",
+      img: "/media/products/clouders-gray/buudy-barefoot-shoes-clouders-gray-wide-toe-box-hero.jpg",
+    },
+  ];
+
+  const roamersColorways = [
+    {
+      name: "Ash Gray",
+      handle: "roamers-barefoot-shoes-ash-gray",
+      img: "/media/products/roamers-ash-gray/buudy-barefoot-shoes-roamers-ash-gray-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Beige",
+      handle: "roamers-barefoot-shoes-beige",
+      img: "/media/products/roamers-beige/buudy-barefoot-shoes-roamers-beige-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Black Coal",
+      handle: "roamers-barefoot-shoes-black-coal",
+      img: "/media/products/roamers-black-coal/buudy-barefoot-shoes-roamers-black-coal-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Ice Blue",
+      handle: "roamers-barefoot-shoes-ice-blue",
+      img: "/media/products/roamers-ice-blue/buudy-barefoot-shoes-roamers-ice-blue-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Navy Blue",
+      handle: "roamers-barefoot-shoes-navy-blue",
+      img: "/media/products/roamers-navy-blue/buudy-barefoot-shoes-roamers-navy-blue-wide-toe-box-hero.jpg",
+    },
+  ];
+
   const defaultColorways = [
     {
       name: "White",
@@ -77,7 +133,13 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     },
   ];
 
-  const colorways = product.handle.startsWith("drifters") ? driftersColorways : defaultColorways;
+  const colorways = product.handle.startsWith("drifters")
+    ? driftersColorways
+    : product.handle.startsWith("clouders")
+      ? cloudersColorways
+      : product.handle.startsWith("roamers")
+        ? roamersColorways
+        : defaultColorways;
 
   const handleAddToCart = () => {
     if (!selectedSizeEu) {
@@ -128,9 +190,13 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         <p className="text-[14px] font-semibold">{product.colorName}</p>
         <p className="mt-1 text-[14px]">{product.subtitle}</p>
         <div className={`mt-4 grid gap-1.5 lg:mt-[clamp(10px,1.78vh,16px)] ${
-          colorways.length <= 4 ? "grid-cols-4" : "grid-cols-6"
+          colorways.length <= 4
+            ? "grid-cols-4"
+            : colorways.length === 5
+              ? "grid-cols-5"
+              : "grid-cols-6"
         }`}>
-          {colorways.slice(0, colorways.length > 5 ? 5 : colorways.length).map((colour) => (
+          {colorways.slice(0, colorways.length > 6 ? 5 : colorways.length).map((colour) => (
             <Link
               key={colour.name}
               href={`/products/${colour.handle}`}
@@ -145,11 +211,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
               <Image src={colour.img} alt={colour.name} fill sizes="72px" className="object-cover" />
             </Link>
           ))}
-          {colorways.length > 5 && (
+          {colorways.length > 6 && (
             <Link
               href={`/products/${colorways[5].handle}`}
               className="flex aspect-square items-center justify-center border border-[#e5e5e5] text-[13px] font-semibold hover:border-[#111111]"
-              aria-label="View one more colour"
+              aria-label="View more colours"
             >
               +{colorways.length - 5}
             </Link>

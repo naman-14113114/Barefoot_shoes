@@ -9,9 +9,9 @@ export const FOOTER_COLUMNS = [
   {
     title: "Collections",
     links: [
-      { label: "LT 03 Suede Sand", href: "/products/lt-03-suede-sand" },
-      { label: "LT 01 Court Lite", href: "/collections/sneakers" },
-      { label: "DS 03 Deck", href: "/collections/sneakers" },
+      { label: "Drifters Barefoot", href: "/products/drifters-barefoot-shoes-white" },
+      { label: "Clouders Barefoot", href: "/products/clouders-barefoot-shoes-white" },
+      { label: "Roamers Barefoot", href: "/products/roamers-barefoot-shoes-ash-gray" },
       { label: "All Barefoot Shoes", href: "/collections/sneakers" },
       { label: "Size & Fit Guide", href: "/size-guide" },
     ],

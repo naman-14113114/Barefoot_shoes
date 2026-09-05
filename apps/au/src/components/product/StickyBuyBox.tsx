@@ -4,9 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { BarefootProduct } from "@barefoot/shared";
-import { StarRating, AccordionItem, AccordionGroup } from "@barefoot/ui";
+import { AccordionItem, AccordionGroup } from "@barefoot/ui";
 import { useCart } from "@/components/cart/CartProvider";
 import { SizeSelectorModal } from "./SizeSelectorModal";
+import { useProductSelection } from "./ProductSelectionProvider";
 
 interface StickyBuyBoxProps {
   product: BarefootProduct;
@@ -14,13 +15,92 @@ interface StickyBuyBoxProps {
 
 export function StickyBuyBox({ product }: StickyBuyBoxProps) {
   const { addItem } = useCart();
-  const [selectedSizeEu, setSelectedSizeEu] = useState<number | null>(42);
+  const { selectedSizeEu, setSelectedSizeEu } = useProductSelection();
   const [sizeModalOpen, setSizeModalOpen] = useState(false);
 
   const selectedVariant =
     product.variants.find((v) => v.sizeEu === selectedSizeEu) || product.variants[0];
 
-  const colorways = [
+  const driftersColorways = [
+    {
+      name: "White",
+      handle: "drifters-barefoot-shoes-white",
+      img: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Black",
+      handle: "drifters-barefoot-shoes-black",
+      img: "/media/products/drifters-black/buudy-barefoot-shoes-drifters-black-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Gray",
+      handle: "drifters-barefoot-shoes-gray",
+      img: "/media/products/drifters-gray/buudy-barefoot-shoes-drifters-gray-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Blue",
+      handle: "drifters-barefoot-shoes-blue",
+      img: "/media/products/drifters-blue/buudy-barefoot-shoes-drifters-blue-wide-toe-box-hero.jpg",
+    },
+  ];
+
+  const cloudersColorways = [
+    {
+      name: "White",
+      handle: "clouders-barefoot-shoes-white",
+      img: "/media/products/clouders-white/buudy-barefoot-shoes-clouders-white-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Beige",
+      handle: "clouders-barefoot-shoes-beige",
+      img: "/media/products/clouders-beige/buudy-barefoot-shoes-clouders-beige-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Black",
+      handle: "clouders-barefoot-shoes-black",
+      img: "/media/products/clouders-black/buudy-barefoot-shoes-clouders-black-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Sky Blue",
+      handle: "clouders-barefoot-shoes-sky-blue",
+      img: "/media/products/clouders-sky-blue/buudy-barefoot-shoes-clouders-sky-blue-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Gray",
+      handle: "clouders-barefoot-shoes-gray",
+      img: "/media/products/clouders-gray/buudy-barefoot-shoes-clouders-gray-wide-toe-box-hero.jpg",
+    },
+  ];
+
+  const roamersColorways = [
+    {
+      name: "Ash Gray",
+      handle: "roamers-barefoot-shoes-ash-gray",
+      img: "/media/products/roamers-ash-gray/buudy-barefoot-shoes-roamers-ash-gray-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Beige",
+      handle: "roamers-barefoot-shoes-beige",
+      img: "/media/products/roamers-beige/buudy-barefoot-shoes-roamers-beige-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Black Coal",
+      handle: "roamers-barefoot-shoes-black-coal",
+      img: "/media/products/roamers-black-coal/buudy-barefoot-shoes-roamers-black-coal-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Ice Blue",
+      handle: "roamers-barefoot-shoes-ice-blue",
+      img: "/media/products/roamers-ice-blue/buudy-barefoot-shoes-roamers-ice-blue-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Navy Blue",
+      handle: "roamers-barefoot-shoes-navy-blue",
+      img: "/media/products/roamers-navy-blue/buudy-barefoot-shoes-roamers-navy-blue-wide-toe-box-hero.jpg",
+    },
+  ];
+
+  const defaultColorways = [
     {
       name: "Sand",
       handle: "lt-03-suede-sand",
@@ -43,6 +123,14 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     },
   ];
 
+  const colorways = product.handle.startsWith("drifters")
+    ? driftersColorways
+    : product.handle.startsWith("clouders")
+      ? cloudersColorways
+      : product.handle.startsWith("roamers")
+        ? roamersColorways
+        : defaultColorways;
+
   const handleAddToCart = () => {
     addItem({
       id: `${product.id}-${selectedVariant.sizeEu}`,
@@ -64,122 +152,96 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     <div className="w-full lg:sticky lg:top-[96px] lg:self-start space-y-5">
       {/* 1. Backlink */}
       <div>
-        <Link
-          href="/collections/sneakers"
-          className="inline-flex items-center gap-1.5 text-[13px] text-[#767676] hover:text-[#000000] transition-colors group"
-        >
-          <svg
-            className="w-3 h-3 transition-transform group-hover:-translate-x-0.5"
-            fill="none"
-            viewBox="0 0 13 13"
-          >
-            <path
-              d="M10.432 1.725 5.844 6.508l4.587 4.767L9.154 12.5 3.41 6.508 9.155.5l1.277 1.225z"
-              fill="currentColor"
-            />
-          </svg>
-          <span>Sneakers</span>
-        </Link>
-      </div>
-
-      {/* 2. Title, Subtitle, & Badge */}
-      <div className="space-y-1">
-        {product.badge && (
-          <div className="inline-block bg-[#1c1c1c] text-white text-[10px] font-medium uppercase tracking-[0.08em] px-2 py-0.5 mb-1">
-            {product.badge}
-          </div>
-        )}
-        <h1 className="text-[20px] md:text-[22px] font-normal text-[#000000] leading-snug">
+        <h1 className="text-[15px] font-normal leading-[1.35] text-[#111111] lg:text-[20px]">
           {product.title}
-          <span className="block text-[14px] text-[#929292] mt-0.5 font-normal">
-            {product.subtitle}
-          </span>
         </h1>
+        <p className="mt-1 text-[14px] text-[#979797]">{product.subtitle}</p>
       </div>
 
-      {/* 3. Pricing Strip (Strict Integer A$89 / A$179) */}
-      <div className="flex items-baseline gap-2.5">
-        {product.compareAtPrice > product.price && (
-          <span className="text-[14px] text-[#929292] line-through decoration-[1px]">
-            A${product.compareAtPrice}
+      <div className="mt-8 flex items-center justify-between border-b border-[#e5e5e5] pb-8 text-[15px] lg:mt-[clamp(20px,3.56vh,32px)] lg:pb-[clamp(20px,3.56vh,32px)]">
+        <div className="flex items-baseline gap-2">
+          {product.compareAtPrice > product.price && (
+            <span className="font-normal text-[#929292] line-through decoration-[1px]">
+              A${product.compareAtPrice}
+            </span>
+          )}
+          <span className="font-normal text-[#111111]">
+            A${product.price}
           </span>
-        )}
-        <span className="text-[16px] md:text-[17px] font-medium text-[#000000]">
-          A${product.price}
-        </span>
-        <span className="text-[10px] font-medium text-[#0e855b] bg-[#f0fdf4] px-1.5 py-0.5 ml-1 tracking-wide">
-          50% OFF
-        </span>
-      </div>
-
-      {/* 4. Review Rating */}
-      <div>
-        <StarRating rating={product.rating} count={product.reviewCount} />
-      </div>
-
-      {/* 5. Colorway Thumbnails */}
-      <div className="space-y-2.5 pt-3 border-t border-[#eaeaea]">
-        <div className="flex justify-between text-[12px]">
-          <span className="font-medium text-[#000000]">Colour: {product.colorName}</span>
-          <span className="text-[#929292]">{product.material}</span>
         </div>
-        <div className="flex items-center gap-2">
-          {colorways.map((c) => (
+        {product.badge && <span className="text-[12px] font-semibold">{product.badge}</span>}
+      </div>
+
+      <div className="pt-7 lg:pt-[clamp(18px,3.12vh,28px)]">
+        <p className="text-[14px] font-semibold">{product.colorName}</p>
+        <p className="mt-1 text-[14px]">{product.subtitle}</p>
+        <div className={`mt-4 grid gap-1.5 lg:mt-[clamp(10px,1.78vh,16px)] ${
+          colorways.length <= 4
+            ? "grid-cols-4"
+            : colorways.length === 5
+              ? "grid-cols-5"
+              : "grid-cols-6"
+        }`}>
+          {colorways.slice(0, colorways.length > 6 ? 5 : colorways.length).map((colour) => (
             <Link
-              key={c.name}
-              href={`/products/${c.handle}`}
-              title={`${product.title} ${c.name}`}
-              className={`relative w-14 h-14 border overflow-hidden transition-all ${
-                c.handle === product.handle
-                  ? "border-[#000000] ring-1 ring-[#000000]"
-                  : "border-[#eaeaea] hover:border-[#929292]"
+              key={colour.name}
+              href={`/products/${colour.handle}`}
+              title={colour.name}
+              aria-label={`View ${colour.name}`}
+              className={`relative aspect-square overflow-hidden border bg-[#f1f1f1] transition-colors ${
+                colour.handle === product.handle
+                  ? "border-[#111111] ring-1 ring-[#111111]"
+                  : "border-transparent hover:border-[#b7b7b7]"
               }`}
             >
-              <Image src={c.img} alt={c.name} fill sizes="56px" className="object-cover" />
+              <Image src={colour.img} alt={colour.name} fill sizes="72px" className="object-cover" />
             </Link>
           ))}
+          {colorways.length > 6 && (
+            <Link
+              href={`/products/${colorways[5].handle}`}
+              className="flex aspect-square items-center justify-center border border-[#e5e5e5] text-[13px] font-semibold hover:border-[#111111]"
+              aria-label="View more colours"
+            >
+              +{colorways.length - 5}
+            </Link>
+          )}
         </div>
       </div>
 
-      {/* 6. Size Selector Trigger */}
-      <div className="space-y-2 pt-1">
+      <div className="mt-7 lg:mt-[clamp(18px,3.12vh,28px)]">
         <button
           type="button"
           onClick={() => setSizeModalOpen(true)}
-          className="w-full flex items-center justify-between border border-[#eaeaea] px-4 py-3 text-[13px] font-medium hover:border-[#000000] transition-colors rounded-none bg-white text-left"
+          className="flex h-[46px] w-full items-center justify-between border border-[#e5e5e5] bg-white px-5 text-left text-[13px] font-semibold transition-colors hover:border-[#111111]"
         >
           <span>
             {selectedSizeEu
-              ? `Size: EU ${selectedSizeEu} | AU ${selectedVariant.sizeUk} | US ${selectedVariant.sizeUs}`
+              ? `EU ${selectedSizeEu} | AU ${selectedVariant.sizeUk} | US ${selectedVariant.sizeUs}`
               : "Select size"}
           </span>
-          <svg className="w-2.5 h-2.5 text-[#000000]" fill="none" viewBox="0 0 10 6">
-            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.25" />
           </svg>
         </button>
 
-        {/* Size Help */}
         <button
           type="button"
           onClick={() => setSizeModalOpen(true)}
-          className="text-[12px] text-[#767676] underline underline-offset-4 hover:text-[#000000] transition-colors block text-left"
+          className="mx-auto mt-4 block text-[13px] underline decoration-[#999999] underline-offset-4 lg:mt-[clamp(10px,1.78vh,16px)]"
         >
           Not sure on size? Find your barefoot size in 60 seconds.
         </button>
       </div>
 
-      {/* 7. Primary Action Button */}
-      <div>
-        <button
-          type="button"
-          onClick={handleAddToCart}
-          className="w-full bg-[#000000] text-white border border-[#000000] py-3.5 text-[13px] font-medium tracking-[0.02em] hover:bg-neutral-800 transition-colors duration-200 rounded-none shadow-sm flex items-center justify-center gap-2"
-        >
-          <span>Add to bag</span>
-          <span>·</span>
-          <span>A${product.price}</span>
-        </button>
-      </div>
+      <button
+        type="button"
+        data-primary-buy
+        onClick={handleAddToCart}
+        className="mt-5 flex h-[46px] w-full items-center justify-center bg-[#111111] text-[13px] font-semibold text-white transition-colors duration-150 hover:bg-[#303030] active:bg-[#444444] lg:mt-[clamp(12px,2.22vh,20px)]"
+      >
+        Add to bag
+      </button>
 
       {/* 8. Quick USPs with expandable information */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1 text-[12px] text-[#767676]">
