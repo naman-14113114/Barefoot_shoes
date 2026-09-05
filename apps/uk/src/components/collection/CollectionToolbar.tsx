@@ -30,7 +30,7 @@ export function CollectionToolbar({
   ];
 
   return (
-    <div className="sticky top-[60px] md:top-[66px] z-30 bg-white border-b border-[#eaeaea] py-3.5 px-4 md:px-8">
+    <div className="w-full bg-white border-b border-[#eaeaea] py-3.5 px-4 md:px-8">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         {/* Left: Breadcrumb & Title */}
         <div className="flex items-center gap-3">

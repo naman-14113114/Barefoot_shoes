@@ -84,6 +84,12 @@ export default async function ProductDetailPage({
     notFound();
   }
 
+  const model = product.handle.startsWith("clouders-")
+    ? "clouders"
+    : product.handle.startsWith("roamers-")
+    ? "roamers"
+    : "drifters";
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -146,7 +152,7 @@ export default async function ProductDetailPage({
       </ProductSelectionProvider>
 
       {/* 3. Auto-Moving Lifestyle Image Marquee Carousel */}
-      <LifestyleMarquee />
+      <LifestyleMarquee model={model} />
 
       {/* 4. Frequently Bought Together Carousel */}
       <FrequentlyBoughtTogether />

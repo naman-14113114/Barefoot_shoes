@@ -41,7 +41,7 @@ export default function SneakersCollectionPage() {
   }, [selectedSizes, selectedColor, currentSort]);
 
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-[70px] lg:pt-[86px]">
       <CollectionToolbar
         productCount={filteredProducts.length}
         onToggleFilters={() => setFiltersOpen(!filtersOpen)}

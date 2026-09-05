@@ -50,6 +50,85 @@ export const DRIFTERS_LIFESTYLE_IMAGES: LifestyleImageItem[] = [
   },
 ];
 
+
+export const CLOUDERS_LIFESTYLE_IMAGES: LifestyleImageItem[] = [
+  {
+    id: "buudy-clouders-white-agility",
+    src: "/media/clouders/buudy-barefoot-shoes-clouders-white-athletic-agility.jpg",
+    alt: "Buudy Barefoot Shoes Clouders White Athletic & Agility Training",
+    label: "Gym & Agility",
+  },
+  {
+    id: "buudy-clouders-black-active",
+    src: "/media/clouders/buudy-barefoot-shoes-clouders-black-everyday-active.jpg",
+    alt: "Buudy Barefoot Shoes Clouders Black Everyday Active Footwear",
+    label: "Everyday Active",
+  },
+  {
+    id: "buudy-clouders-blue-flex",
+    src: "/media/clouders/buudy-barefoot-shoes-clouders-sky-blue-dynamic-flex.jpg",
+    alt: "Buudy Barefoot Shoes Clouders Sky Blue Dynamic Sole Flex",
+    label: "Dynamic Flex",
+  },
+  {
+    id: "buudy-clouders-beige-stride",
+    src: "/media/clouders/buudy-barefoot-shoes-clouders-beige-zero-drop-stride.jpg",
+    alt: "Buudy Barefoot Shoes Clouders Beige Zero-Drop Natural Stride",
+    label: "Zero-Drop Stride",
+  },
+  {
+    id: "buudy-clouders-gray-toe-box",
+    src: "/media/clouders/buudy-barefoot-shoes-clouders-gray-wide-toe-box.jpg",
+    alt: "Buudy Barefoot Shoes Clouders Gray Anatomical Wide Toe Box",
+    label: "Wide Toe Box",
+  },
+  {
+    id: "buudy-clouders-sole-tread",
+    src: "/media/clouders/buudy-barefoot-shoes-clouders-ultra-flexible-sole-tread.jpg",
+    alt: "Buudy Barefoot Shoes Clouders Ultra-Flexible Outsole Tread",
+    label: "360° Flexibility",
+  },
+];
+
+export const ROAMERS_LIFESTYLE_IMAGES: LifestyleImageItem[] = [
+  {
+    id: "buudy-roamers-gray-walking",
+    src: "/media/roamers/buudy-barefoot-shoes-roamers-ash-gray-urban-walking.jpg",
+    alt: "Buudy Barefoot Shoes Roamers Ash Gray All-Day Urban Walking",
+    label: "All-Day Walking",
+  },
+  {
+    id: "buudy-roamers-navy-sneaker",
+    src: "/media/roamers/buudy-barefoot-shoes-roamers-navy-blue-everyday-sneaker.jpg",
+    alt: "Buudy Barefoot Shoes Roamers Navy Blue Everyday Sneaker",
+    label: "Everyday Sneaker",
+  },
+  {
+    id: "buudy-roamers-beige-comfort",
+    src: "/media/roamers/buudy-barefoot-shoes-roamers-beige-breathable-comfort.jpg",
+    alt: "Buudy Barefoot Shoes Roamers Beige Breathable Barefoot Comfort",
+    label: "Breathable Comfort",
+  },
+  {
+    id: "buudy-roamers-black-stride",
+    src: "/media/roamers/buudy-barefoot-shoes-roamers-black-coal-natural-stride.jpg",
+    alt: "Buudy Barefoot Shoes Roamers Black Coal Natural Grounding Stride",
+    label: "Natural Stride",
+  },
+  {
+    id: "buudy-roamers-blue-fit",
+    src: "/media/roamers/buudy-barefoot-shoes-roamers-ice-blue-lightweight-fit.jpg",
+    alt: "Buudy Barefoot Shoes Roamers Ice Blue Featherlight Anatomical Fit",
+    label: "Featherlight Fit",
+  },
+  {
+    id: "buudy-roamers-sole-traction",
+    src: "/media/roamers/buudy-barefoot-shoes-roamers-flexible-outsole-traction.jpg",
+    alt: "Buudy Barefoot Shoes Roamers Flexible Outsole Grip & Traction",
+    label: "Flexible Traction",
+  },
+];
+
 const MARQUEE_STYLES = `
   @keyframes barefoot-marquee {
     0% {
@@ -107,14 +186,24 @@ const MARQUEE_STYLES = `
 export interface LifestyleMarqueeProps {
   className?: string;
   images?: LifestyleImageItem[];
+  model?: "drifters" | "clouders" | "roamers";
 }
 
 export function LifestyleMarquee({
   className,
-  images = DRIFTERS_LIFESTYLE_IMAGES,
+  images,
+  model = "drifters",
 }: LifestyleMarqueeProps) {
+  const activeImages =
+    images ||
+    (model === "clouders"
+      ? CLOUDERS_LIFESTYLE_IMAGES
+      : model === "roamers"
+      ? ROAMERS_LIFESTYLE_IMAGES
+      : DRIFTERS_LIFESTYLE_IMAGES);
+
   // Duplicate images array to create a seamless infinite looping track
-  const displayImages = [...images, ...images];
+  const displayImages = [...activeImages, ...activeImages];
 
   return (
     <section
