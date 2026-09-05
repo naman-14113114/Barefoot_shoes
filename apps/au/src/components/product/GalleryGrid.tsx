@@ -9,6 +9,23 @@ interface GalleryGridProps {
   title: string;
 }
 
+function getAltText(src: string, title: string, index: number): string {
+  try {
+    const filename = src.split("/").pop()?.replace(/\.[^/.]+$/, "") || "";
+    if (filename.startsWith("buudy-barefoot-shoes-")) {
+      const parts = filename.replace(/^buudy-barefoot-shoes-/, "").split("-");
+      if (parts.length >= 3) {
+        const descriptor = parts
+          .slice(2)
+          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(" ");
+        return `${title} - ${descriptor}`;
+      }
+    }
+  } catch {}
+  return `${title} - view ${index + 1}`;
+}
+
 export function GalleryGrid({ images, title }: GalleryGridProps) {
   const [activeZoomIdx, setActiveZoomIdx] = useState<number | null>(null);
   const [mobileIdx, setMobileIdx] = useState(0);
@@ -40,7 +57,7 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
             >
               <Image
                 src={src}
-                alt={`${title} - view ${idx + 1}`}
+                alt={getAltText(src, title, idx)}
                 fill
                 priority={idx < 4}
                 loading={idx < 4 ? "eager" : "eager"}
@@ -79,7 +96,7 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
               >
                 <Image
                   src={src}
-                  alt={`${title} - view ${idx + 1}`}
+                  alt={getAltText(src, title, idx)}
                   fill
                   priority={idx === 0}
                   loading="eager"
@@ -124,7 +141,7 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
           <div className="relative flex-1 w-full my-4 flex items-center justify-center">
             <Image
               src={images[activeZoomIdx]}
-              alt={`${title} zoomed`}
+              alt={getAltText(images[activeZoomIdx], title, activeZoomIdx)}
               fill
               sizes="100vw"
               className="object-contain"

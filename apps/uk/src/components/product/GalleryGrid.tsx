@@ -9,6 +9,23 @@ interface GalleryGridProps {
   title: string;
 }
 
+function getAltText(src: string, title: string, index: number): string {
+  try {
+    const filename = src.split("/").pop()?.replace(/\.[^/.]+$/, "") || "";
+    if (filename.startsWith("buudy-barefoot-shoes-")) {
+      const parts = filename.replace(/^buudy-barefoot-shoes-/, "").split("-");
+      if (parts.length >= 3) {
+        const descriptor = parts
+          .slice(2)
+          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(" ");
+        return `${title} - ${descriptor}`;
+      }
+    }
+  } catch {}
+  return `${title}, view ${index + 1}`;
+}
+
 export function GalleryGrid({ images, title }: GalleryGridProps) {
   const [activeZoomIdx, setActiveZoomIdx] = useState<number | null>(null);
   const [mobileIdx, setMobileIdx] = useState(0);
@@ -58,7 +75,7 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
               >
                 <Image
                   src={src}
-                  alt={`${title}, view ${index + 1}`}
+                  alt={getAltText(src, title, index)}
                   fill
                   priority={index < 2}
                   loading={index < 2 ? "eager" : "lazy"}
@@ -103,7 +120,7 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
               >
                 <Image
                   src={src}
-                  alt={`${title}, view ${index + 1}`}
+                  alt={getAltText(src, title, index)}
                   fill
                   priority={index === 0}
                   loading={index === 0 ? "eager" : "lazy"}
@@ -168,7 +185,7 @@ export function GalleryGrid({ images, title }: GalleryGridProps) {
           <div className="absolute inset-0 lg:left-[96px]">
             <Image
               src={images[activeZoomIdx]}
-              alt={`${title}, enlarged view ${activeZoomIdx + 1}`}
+              alt={getAltText(images[activeZoomIdx], title, activeZoomIdx)}
               fill
               sizes="100vw"
               className="object-contain lg:object-cover"
