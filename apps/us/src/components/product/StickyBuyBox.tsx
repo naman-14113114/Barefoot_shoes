@@ -117,14 +117,14 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       img: "/media/products/lt-03-premium-nappa-green/buudy-barefoot-shoes-lt-03-premium-nappa-green-wide-toe-box-hero.jpg",
     },
     {
+      name: "Dark Blue",
+      handle: "lt-03-premium-nappa-dark-blue",
+      img: "/media/products/lt-03-premium-nappa-dark-blue/buudy-barefoot-shoes-lt-03-premium-nappa-dark-blue-wide-toe-box-hero.jpg",
+    },
+    {
       name: "Sand",
       handle: "lt-03-suede-sand",
       img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_241050__Aangepast_02LR.jpg?height=240&v=1747401120",
-    },
-    {
-      name: "Blueberry",
-      handle: "lt-03-suede-blueberry",
-      img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ-240522-043_v1LR.jpg?height=240&v=1720252726",
     },
   ];
 
@@ -145,14 +145,14 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       img: "/media/products/lt-03-premium-nappa-green/buudy-barefoot-shoes-lt-03-premium-nappa-green-wide-toe-box-hero.jpg",
     },
     {
+      name: "Dark Blue",
+      handle: "lt-03-premium-nappa-dark-blue",
+      img: "/media/products/lt-03-premium-nappa-dark-blue/buudy-barefoot-shoes-lt-03-premium-nappa-dark-blue-wide-toe-box-hero.jpg",
+    },
+    {
       name: "Sand",
       handle: "lt-03-suede-sand",
       img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_241050__Aangepast_02LR.jpg?height=240&v=1747401120",
-    },
-    {
-      name: "Blueberry",
-      handle: "lt-03-suede-blueberry",
-      img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ-240522-043_v1LR.jpg?height=240&v=1720252726",
     },
     {
       name: "Chocolate",

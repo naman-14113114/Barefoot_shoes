@@ -79,6 +79,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-03-premium-nappa-green/buudy-barefoot-shoes-lt-03-premium-nappa-green-wide-toe-box-hero.jpg",
       },
       {
+        name: "Dark Blue",
+        color: "#1e293b",
+        image: "/media/products/lt-03-premium-nappa-dark-blue/buudy-barefoot-shoes-lt-03-premium-nappa-dark-blue-wide-toe-box-hero.jpg",
+      },
+      {
         name: "Sand",
         color: "#d7c4ab",
         image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ-240522-01_v1LR.jpg?height=400&v=1720182435",

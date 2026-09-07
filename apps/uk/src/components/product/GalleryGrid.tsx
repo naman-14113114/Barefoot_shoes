@@ -13,7 +13,16 @@ function getAltText(src: string, title: string, index: number): string {
   try {
     const filename = src.split("/").pop()?.replace(/\.[^/.]+$/, "") || "";
     if (filename.startsWith("buudy-barefoot-shoes-")) {
-      const parts = filename.replace(/^buudy-barefoot-shoes-/, "").split("-");
+      const clean = filename.replace(/^buudy-barefoot-shoes-/, "");
+      const ltMatch = clean.match(/^lt-03-premium-nappa-(?:white|black|green|dark-blue)-(.*)$/);
+      if (ltMatch) {
+        const descriptor = ltMatch[1]
+          .split("-")
+          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(" ");
+        return `${title} - ${descriptor}`;
+      }
+      const parts = clean.split("-");
       if (parts.length >= 3) {
         const descriptor = parts
           .slice(2)

@@ -80,6 +80,8 @@ export function StickyAddToCartBar({ product }: StickyAddToCartBarProps) {
                 ? "border-[#7e8287] bg-[#7e8287]"
                 : product.colorName.toLowerCase().includes("green")
                 ? "border-[#3e4e3e] bg-[#3e4e3e]"
+                : product.colorName.toLowerCase().includes("dark blue") || product.colorName.toLowerCase().includes("navy")
+                ? "border-[#1e293b] bg-[#1e293b]"
                 : product.colorName.toLowerCase().includes("blue")
                 ? "border-[#0284c7] bg-[#0284c7]"
                 : product.colorName.toLowerCase() === "sand"
