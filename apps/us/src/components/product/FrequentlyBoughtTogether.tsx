@@ -47,6 +47,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "lt-03-premium-nappa-black",
+      handle: "lt-03-premium-nappa-black",
+      title: "LT 03 Premium Nappa All Black",
+      subtitle: "Premium Nappa",
+      price: 59,
+      compareAtPrice: 119,
+      badge: "Most Wanted",
+      image: "/media/products/lt-03-premium-nappa-black/buudy-barefoot-shoes-lt-03-premium-nappa-black-wide-toe-box-hero.jpg",
+      variantId: "100099006",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",

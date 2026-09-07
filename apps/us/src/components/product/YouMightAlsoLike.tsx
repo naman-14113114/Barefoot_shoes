@@ -66,7 +66,7 @@ const US_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
       {
         name: "Obsidian",
         color: "#18181b",
-        image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ-250204-042.jpg",
+        image: "/media/products/lt-03-premium-nappa-black/buudy-barefoot-shoes-lt-03-premium-nappa-black-wide-toe-box-hero.jpg",
       },
       {
         name: "White",
