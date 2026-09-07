@@ -71,7 +71,7 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
       {
         name: "White",
         color: "#f4f4f5",
-        image: "https://www.etq-amsterdam.com/cdn/shop/products/ETQ_Model_046Angel3_3840x.jpg?v=1760605385",
+        image: "/media/products/lt-03-premium-nappa-white/buudy-barefoot-shoes-lt-03-premium-nappa-white-wide-toe-box-hero.jpg",
       },
       {
         name: "Sand",
@@ -170,7 +170,7 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
       {
         name: "White",
         color: "#f4f4f5",
-        image: "https://www.etq-amsterdam.com/cdn/shop/products/ETQ_Model_046Angel3_3840x.jpg?v=1760605385",
+        image: "/media/products/lt-03-premium-nappa-white/buudy-barefoot-shoes-lt-03-premium-nappa-white-wide-toe-box-hero.jpg",
       },
       {
         name: "Obsidian",

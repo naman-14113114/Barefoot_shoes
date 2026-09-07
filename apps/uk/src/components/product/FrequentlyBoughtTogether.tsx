@@ -42,7 +42,7 @@ export function FrequentlyBoughtTogether() {
       price: 49,
       compareAtPrice: 99,
       badge: "Most Wanted",
-      image: "https://www.etq-amsterdam.com/cdn/shop/products/ETQ_Model_046Angel3.jpg?height=400&v=1760605385",
+      image: "/media/products/lt-03-premium-nappa-white/buudy-barefoot-shoes-lt-03-premium-nappa-white-wide-toe-box-hero.jpg",
       variantId: "100099003",
       sizeEu: 42,
     },

@@ -114,7 +114,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     {
       name: "White",
       handle: "lt-03-premium-nappa-white",
-      img: "https://www.etq-amsterdam.com/cdn/shop/products/ETQ_Model_046Angel3.jpg?height=240&v=1760605385",
+      img: "/media/products/lt-03-premium-nappa-white/buudy-barefoot-shoes-lt-03-premium-nappa-white-wide-toe-box-hero.jpg",
     },
     {
       name: "Chocolate",
