@@ -166,6 +166,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-01-court-lite-nubuck-essence-white/buudy-barefoot-shoes-lt-01-court-lite-nubuck-essence-white-wide-toe-box-hero.jpg",
       },
       {
+        name: "Suede Sand",
+        color: "#d7c4ab",
+        image: "/media/products/lt-01-court-lite-nubuck-suede-sand/buudy-barefoot-shoes-lt-01-court-lite-nubuck-suede-sand-wide-toe-box-hero.jpg",
+      },
+      {
         name: "White",
         color: "#f4f4f5",
         image: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_035Angel3_1_3__v1_BASIS_3840x.jpg?v=1741371409",

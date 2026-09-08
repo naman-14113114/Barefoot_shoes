@@ -179,6 +179,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "lt-01-court-lite-nubuck-suede-sand",
+      handle: "lt-01-court-lite-nubuck-suede-sand",
+      title: "LT 01 Court Lite Nubuck Suede Sand",
+      subtitle: "Court Lite Suede",
+      price: 89,
+      compareAtPrice: 179,
+      badge: "Trending",
+      image: "/media/products/lt-01-court-lite-nubuck-suede-sand/buudy-barefoot-shoes-lt-01-court-lite-nubuck-suede-sand-wide-toe-box-hero.jpg",
+      variantId: "100099017",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",

@@ -14,7 +14,7 @@ function getAltText(src: string, title: string, index: number): string {
     const filename = src.split("/").pop()?.replace(/\.[^/.]+$/, "") || "";
     if (filename.startsWith("buudy-barefoot-shoes-")) {
       const clean = filename.replace(/^buudy-barefoot-shoes-/, "");
-      const ltMatch = clean.match(/^(?:lt-03-premium-nappa-(?:white|black|green|dark-blue|light-blue|pink)|lt-02-rugged-(?:white|white-black|beige-red|all-black|black)|lt-01-court-lite-(?:white|nubuck-all-black|nubuck-ash-grey|nubuck-essence-white|essence-white|all-black|ash-grey|black))-(.*)$/);
+      const ltMatch = clean.match(/^(?:lt-03-premium-nappa-(?:white|black|green|dark-blue|light-blue|pink)|lt-02-rugged-(?:white|white-black|beige-red|all-black|black)|lt-01-court-lite-(?:white|nubuck-all-black|nubuck-ash-grey|nubuck-essence-white|nubuck-suede-sand|suede-sand|essence-white|all-black|ash-grey|black))-(.*)$/);
       if (ltMatch) {
         const descriptor = ltMatch[1]
           .split("-")
