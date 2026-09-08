@@ -153,7 +153,7 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
       {
         name: "Obsidian",
         color: "#18181b",
-        image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ-250204-012.jpg",
+        image: "/media/products/lt-01-court-lite-nubuck-all-black/buudy-barefoot-shoes-lt-01-court-lite-nubuck-all-black-wide-toe-box-hero.jpg",
       },
       {
         name: "White",

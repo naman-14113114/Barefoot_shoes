@@ -156,6 +156,19 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     },
   ];
 
+  const lt01CourtLiteColorways = [
+    {
+      name: "White",
+      handle: "lt-01-court-lite-white",
+      img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_035Angel3_1_3__v1_BASIS_3840x.jpg?v=1741371409",
+    },
+    {
+      name: "All Black",
+      handle: "lt-01-court-lite-nubuck-all-black",
+      img: "/media/products/lt-01-court-lite-nubuck-all-black/buudy-barefoot-shoes-lt-01-court-lite-nubuck-all-black-wide-toe-box-hero.jpg",
+    },
+  ];
+
   const defaultColorways = [
     {
       name: "White-Black",
@@ -224,7 +237,9 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
           ? lt03Colorways
           : product.handle.startsWith("lt-02")
             ? lt02Colorways
-            : defaultColorways;
+            : product.handle.startsWith("lt-01-court-lite")
+              ? lt01CourtLiteColorways
+              : defaultColorways;
 
   const handleAddToCart = () => {
     addItem({

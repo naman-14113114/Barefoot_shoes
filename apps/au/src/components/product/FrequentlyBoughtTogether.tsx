@@ -143,6 +143,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "lt-01-court-lite-nubuck-all-black",
+      handle: "lt-01-court-lite-nubuck-all-black",
+      title: "LT 01 Court Lite Nubuck All Black",
+      subtitle: "Court Lite Nubuck",
+      price: 89,
+      compareAtPrice: 179,
+      badge: "Trending",
+      image: "/media/products/lt-01-court-lite-nubuck-all-black/buudy-barefoot-shoes-lt-01-court-lite-nubuck-all-black-wide-toe-box-hero.jpg",
+      variantId: "100099014",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",
