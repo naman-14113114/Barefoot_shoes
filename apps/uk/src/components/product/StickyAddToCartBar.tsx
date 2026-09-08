@@ -90,6 +90,8 @@ export function StickyAddToCartBar({ product }: StickyAddToCartBarProps) {
                 ? "border-[#d8c3a5] bg-[#d8c3a5]"
                 : product.colorName.toLowerCase() === "chocolate"
                 ? "border-[#4a2e18] bg-[#4a2e18]"
+                : product.colorName.toLowerCase().includes("pink")
+                ? "border-[#e5a9b4] bg-[#e5a9b4]"
                 : "border-[#d7d7d7] bg-white"
             }`}
             aria-hidden="true"
