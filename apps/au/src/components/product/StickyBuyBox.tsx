@@ -172,6 +172,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "lt-01-court-lite-nubuck-ash-grey",
       img: "/media/products/lt-01-court-lite-nubuck-ash-grey/buudy-barefoot-shoes-lt-01-court-lite-nubuck-ash-grey-wide-toe-box-hero.jpg",
     },
+    {
+      name: "Essence White",
+      handle: "lt-01-court-lite-nubuck-essence-white",
+      img: "/media/products/lt-01-court-lite-nubuck-essence-white/buudy-barefoot-shoes-lt-01-court-lite-nubuck-essence-white-wide-toe-box-hero.jpg",
+    },
   ];
 
   const defaultColorways = [
@@ -239,6 +244,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       name: "Ash Grey",
       handle: "lt-01-court-lite-nubuck-ash-grey",
       img: "/media/products/lt-01-court-lite-nubuck-ash-grey/buudy-barefoot-shoes-lt-01-court-lite-nubuck-ash-grey-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Essence White",
+      handle: "lt-01-court-lite-nubuck-essence-white",
+      img: "/media/products/lt-01-court-lite-nubuck-essence-white/buudy-barefoot-shoes-lt-01-court-lite-nubuck-essence-white-wide-toe-box-hero.jpg",
     },
     {
       name: "Nappa White",
