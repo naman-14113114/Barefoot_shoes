@@ -99,6 +99,11 @@ const US_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-02-rugged-white-black/buudy-barefoot-shoes-lt-02-rugged-white-black-wide-toe-box-hero.jpg",
       },
       {
+        name: "All Black",
+        color: "#111111",
+        image: "/media/products/lt-02-rugged-all-black/buudy-barefoot-shoes-lt-02-rugged-all-black-wide-toe-box-hero.jpg",
+      },
+      {
         name: "Beige-Red",
         color: "#8c2d38",
         image: "/media/products/lt-02-rugged-beige-red/buudy-barefoot-shoes-lt-02-rugged-beige-red-wide-toe-box-hero.jpg",
