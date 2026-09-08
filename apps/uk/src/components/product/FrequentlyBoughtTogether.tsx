@@ -107,6 +107,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "lt-02-rugged-white",
+      handle: "lt-02-rugged-white",
+      title: "LT 02 Rugged Beige-Red",
+      subtitle: "Rugged Leather",
+      price: 49,
+      compareAtPrice: 99,
+      badge: "Trending",
+      image: "/media/products/lt-02-rugged-beige-red/buudy-barefoot-shoes-lt-02-rugged-beige-red-wide-toe-box-hero.jpg",
+      variantId: "100099011",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",

@@ -92,6 +92,8 @@ export function StickyAddToCartBar({ product }: StickyAddToCartBarProps) {
                 ? "border-[#4a2e18] bg-[#4a2e18]"
                 : product.colorName.toLowerCase().includes("pink")
                 ? "border-[#e5a9b4] bg-[#e5a9b4]"
+                : product.colorName.toLowerCase().includes("red")
+                ? "border-[#8c2d38] bg-[#8c2d38]"
                 : "border-[#d7d7d7] bg-white"
             }`}
             aria-hidden="true"

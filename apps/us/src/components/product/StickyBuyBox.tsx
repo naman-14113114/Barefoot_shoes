@@ -138,7 +138,20 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     },
   ];
 
+  const lt02Colorways = [
+    {
+      name: "Beige-Red",
+      handle: "lt-02-rugged-white",
+      img: "/media/products/lt-02-rugged-beige-red/buudy-barefoot-shoes-lt-02-rugged-beige-red-wide-toe-box-hero.jpg",
+    },
+  ];
+
   const defaultColorways = [
+    {
+      name: "Beige-Red",
+      handle: "lt-02-rugged-white",
+      img: "/media/products/lt-02-rugged-beige-red/buudy-barefoot-shoes-lt-02-rugged-beige-red-wide-toe-box-hero.jpg",
+    },
     {
       name: "White",
       handle: "lt-03-premium-nappa-white",
@@ -189,7 +202,9 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
         ? roamersColorways
         : product.handle.startsWith("lt-03")
           ? lt03Colorways
-          : defaultColorways;
+          : product.handle.startsWith("lt-02")
+            ? lt02Colorways
+            : defaultColorways;
 
   const handleAddToCart = () => {
     addItem({
