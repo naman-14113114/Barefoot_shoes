@@ -94,6 +94,11 @@ const AU_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-03-premium-nappa-pink/buudy-barefoot-shoes-lt-03-premium-nappa-pink-wide-toe-box-hero.jpg",
       },
       {
+        name: "White-Black",
+        color: "#27272a",
+        image: "/media/products/lt-02-rugged-white-black/buudy-barefoot-shoes-lt-02-rugged-white-black-wide-toe-box-hero.jpg",
+      },
+      {
         name: "Beige-Red",
         color: "#8c2d38",
         image: "/media/products/lt-02-rugged-beige-red/buudy-barefoot-shoes-lt-02-rugged-beige-red-wide-toe-box-hero.jpg",
