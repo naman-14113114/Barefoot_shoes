@@ -156,6 +156,11 @@ const US_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-01-court-lite-nubuck-all-black/buudy-barefoot-shoes-lt-01-court-lite-nubuck-all-black-wide-toe-box-hero.jpg",
       },
       {
+        name: "Ash Grey",
+        color: "#9ca3af",
+        image: "/media/products/lt-01-court-lite-nubuck-ash-grey/buudy-barefoot-shoes-lt-01-court-lite-nubuck-ash-grey-wide-toe-box-hero.jpg",
+      },
+      {
         name: "White",
         color: "#f4f4f5",
         image: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_035Angel3_1_3__v1_BASIS_3840x.jpg?v=1741371409",

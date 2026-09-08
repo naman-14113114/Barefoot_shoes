@@ -167,6 +167,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "lt-01-court-lite-nubuck-all-black",
       img: "/media/products/lt-01-court-lite-nubuck-all-black/buudy-barefoot-shoes-lt-01-court-lite-nubuck-all-black-wide-toe-box-hero.jpg",
     },
+    {
+      name: "Ash Grey",
+      handle: "lt-01-court-lite-nubuck-ash-grey",
+      img: "/media/products/lt-01-court-lite-nubuck-ash-grey/buudy-barefoot-shoes-lt-01-court-lite-nubuck-ash-grey-wide-toe-box-hero.jpg",
+    },
   ];
 
   const defaultColorways = [
@@ -224,6 +229,21 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       name: "Chocolate",
       handle: "ds-03-all-chocolate",
       img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_250812_022_v1LR.jpg?height=240&v=1759409557",
+    },
+    {
+      name: "Court White",
+      handle: "lt-01-court-lite-white",
+      img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_035Angel3_1_3__v1_BASIS_3840x.jpg?v=1741371409",
+    },
+    {
+      name: "Ash Grey",
+      handle: "lt-01-court-lite-nubuck-ash-grey",
+      img: "/media/products/lt-01-court-lite-nubuck-ash-grey/buudy-barefoot-shoes-lt-01-court-lite-nubuck-ash-grey-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Nappa White",
+      handle: "lt-01-premium-nappa-white",
+      img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_052Angel3_v1_3840x.jpg?v=1700500234",
     },
   ];
 
