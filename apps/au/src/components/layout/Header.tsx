@@ -88,7 +88,7 @@ const MENU_COLUMNS: Record<MenuLabel, { title: string; links: { label: string; h
       ],
     },
     {
-      title: "BUUDY services",
+      title: "JUUJO services",
       links: [
         { label: "Track an order", href: "/order-tracking" },
         { label: "100-day trial", href: "/returns" },
@@ -218,7 +218,7 @@ export function Header() {
             href="/"
             className="absolute left-1/2 -translate-x-1/2 text-[19px] font-semibold tracking-[0.15em] lg:static lg:translate-x-0 lg:text-[22px]"
           >
-            BUUDY.
+            JUUJO.
           </Link>
 
           <nav className="hidden items-center gap-7 text-[14px] font-normal lg:flex" aria-label="Primary navigation">

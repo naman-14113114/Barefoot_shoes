@@ -7,8 +7,8 @@ export type FaqItem = {
 export const faqsData: FaqItem[] = [
   {
     category: "Sizing & Fit",
-    question: "How do BUUDY. barefoot shoes fit compared to standard Australian footwear?",
-    answerHtml: "<p>BUUDY. shoes feature a wide anatomical toe box and a true zero-drop sole (0mm heel-to-toe drop). They fit true to European sizing (AU sizing corresponds directly to UK sizing for men). We provide an AU/EU conversion chart on every product page.</p>"
+    question: "How do JUUJO. barefoot shoes fit compared to standard Australian footwear?",
+    answerHtml: "<p>JUUJO. shoes feature a wide anatomical toe box and a true zero-drop sole (0mm heel-to-toe drop). They fit true to European sizing (AU sizing corresponds directly to UK sizing for men). We provide an AU/EU conversion chart on every product page.</p>"
   },
   {
     category: "Shipping & Delivery",
@@ -27,7 +27,7 @@ export const faqsData: FaqItem[] = [
   },
   {
     category: "Materials & Care",
-    question: "Where are BUUDY. barefoot shoes crafted?",
+    question: "Where are JUUJO. barefoot shoes crafted?",
     answerHtml: "<p>Our footwear is handcrafted in family-owned artisanal workshops in Portugal using certified Gold-rated full-grain Italian nappa leather from Gruppo Mastrotto and premium Mediterranean suede.</p>"
   },
   {

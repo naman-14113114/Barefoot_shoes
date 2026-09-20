@@ -65,7 +65,7 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
           onClick={onClose}
           className="absolute left-1/2 -translate-x-1/2 text-[19px] font-semibold tracking-[0.15em]"
         >
-          BUUDY.
+          JUUJO.
         </Link>
         <button
           type="button"
@@ -132,7 +132,7 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
         <div className="relative aspect-[3/2] overflow-hidden bg-[#eeeeee]">
           <Image
             src="/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-coastal-stone-editorial-pair.jpg"
-            alt="BUUDY barefoot trainers"
+            alt="JUUJO barefoot trainers"
             fill
             sizes="calc(100vw - 56px)"
             className="object-cover"

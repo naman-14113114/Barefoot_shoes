@@ -1,5 +1,5 @@
 /**
- * ETQ Amsterdam Design Tokens for BUUDY.
+ * ETQ Amsterdam Design Tokens for JUUJO.
  * Pure minimalist monochrome palette, Graphik typography, hairline borders.
  */
 export const ETQ_TOKENS = {

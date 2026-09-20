@@ -3,8 +3,8 @@ import { PolicyView } from "@/components/policies/PolicyView";
 import { refundPolicyHtml } from "@/data/policies";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | BUUDY. Barefoot Footwear",
-  description: "14-day refund window, size exchange instructions, and defect replacements for BUUDY. footwear.",
+  title: "Refund Policy | JUUJO. Barefoot Footwear",
+  description: "14-day refund window, size exchange instructions, and defect replacements for JUUJO. footwear.",
   alternates: {
     canonical: "/policies/refund-policy",
   },

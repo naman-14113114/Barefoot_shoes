@@ -7,13 +7,13 @@ export type FaqItem = {
 export const faqsData: FaqItem[] = [
   {
     category: "Sizing & Fit",
-    question: "How do BUUDY. barefoot shoes fit compared to standard US sneakers?",
-    answerHtml: "<p>BUUDY. shoes feature a wide, anatomically shaped toe box and a true zero-drop sole (0mm heel-to-toe drop). They fit true to size. We provide a full US to EU conversion chart. If you are between sizes, we recommend ordering one half size up.</p>"
+    question: "How do JUUJO. barefoot shoes fit compared to standard US sneakers?",
+    answerHtml: "<p>JUUJO. shoes feature a wide, anatomically shaped toe box and a true zero-drop sole (0mm heel-to-toe drop). They fit true to size. We provide a full US to EU conversion chart. If you are between sizes, we recommend ordering one half size up.</p>"
   },
   {
     category: "Sizing & Fit",
     question: "I am new to barefoot footwear. How should I transition?",
-    answerHtml: "<p>Because traditional athletic shoes elevate your heel, transitioning to zero-drop activates stabilizer muscles in your feet and calves. We suggest wearing your BUUDY. shoes for 2 to 3 hours daily initially, gradually increasing wear over 1 to 2 weeks.</p>"
+    answerHtml: "<p>Because traditional athletic shoes elevate your heel, transitioning to zero-drop activates stabilizer muscles in your feet and calves. We suggest wearing your JUUJO. shoes for 2 to 3 hours daily initially, gradually increasing wear over 1 to 2 weeks.</p>"
   },
   {
     category: "Shipping & Delivery",
@@ -32,7 +32,7 @@ export const faqsData: FaqItem[] = [
   },
   {
     category: "Materials & Care",
-    question: "Where are BUUDY. barefoot sneakers made?",
+    question: "Where are JUUJO. barefoot sneakers made?",
     answerHtml: "<p>Our shoes are handcrafted in family-owned ateliers in Portugal using certified Gold-rated full-grain Italian nappa leather from Gruppo Mastrotto and premium Mediterranean suede.</p>"
   },
   {

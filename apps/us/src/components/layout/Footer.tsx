@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <div className="w-full mt-20">
       {/* 1. Miroooo 4-Pillar Service Strip (Above Black Footer on All Pages) */}
-      <aside aria-label="BUUDY customer care" className="w-full bg-[#fbfbf8] border-t border-b border-[#eaeaea] text-[#000000]">
+      <aside aria-label="JUUJO customer care" className="w-full bg-[#fbfbf8] border-t border-b border-[#eaeaea] text-[#000000]">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#eaeaea]">
           {/* Pillar 1: Customer support */}
           <div className="flex items-center gap-4 py-6 md:py-8 px-6 md:px-10">
@@ -79,7 +79,7 @@ export function Footer() {
           {/* Column 1: Brand Mark & Address */}
           <div className="space-y-4">
             <Link href="/" className="inline-block text-xl font-bold tracking-tighter text-white">
-              BUUDY.
+              JUUJO.
             </Link>
             <p className="text-[13px] text-[#a1a1aa] leading-relaxed max-w-sm">
               Handcrafted European barefoot footwear. Combining anatomical zero-drop biomechanics with Italian Gruppo Mastrotto nappa leather and Mediterranean suede.
@@ -182,10 +182,10 @@ export function Footer() {
             </div>
             <div className="pt-1">
               <a
-                href="mailto:support@buudy.com"
+                href="mailto:support@juujo.com"
                 className="text-white underline underline-offset-4 hover:text-[#a1a1aa] transition-colors"
               >
-                support@buudy.com
+                support@juujo.com
               </a>
             </div>
 
@@ -207,7 +207,7 @@ export function Footer() {
                 </a>
                 {/* Instagram */}
                 <a
-                  href="https://www.instagram.com/buudy_com"
+                  href="https://www.instagram.com/juujo_official"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -219,7 +219,7 @@ export function Footer() {
                 </a>
                 {/* YouTube */}
                 <a
-                  href="https://www.youtube.com/@buudy-com"
+                  href="https://www.youtube.com/@juujo"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="YouTube"
@@ -238,7 +238,7 @@ export function Footer() {
         <div className="border-t border-[#1a1a1a] py-8 px-6 md:px-12 text-[12px] text-[#71717a]">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
-              <span>© 2026 BUUDY. All rights reserved.</span>
+              <span>© 2026 JUUJO. All rights reserved.</span>
               <span className="ml-3 hidden md:inline text-[#52525b]">
                 Handcrafted European Barefoot Footwear.
               </span>

@@ -1,6 +1,6 @@
-// AU Localized Policy Content for BUUDY. Barefoot Luxury Footwear
+// AU Localized Policy Content for JUUJO. Barefoot Luxury Footwear
 export const privacyPolicyHtml = `
-  <p class="mb-4">This Privacy Policy outlines how <strong>BUUDY.</strong> ("we", "us", or "our") collects, utilizes, and protects your personal information when you visit, browse, or purchase handcrafted barefoot footwear from our Australian store (<a href="/" class="underline hover:text-black">au.buudy.com</a>).</p>
+  <p class="mb-4">This Privacy Policy outlines how <strong>JUUJO.</strong> ("we", "us", or "our") collects, utilizes, and protects your personal information when you visit, browse, or purchase handcrafted barefoot footwear from our Australian store (<a href="/" class="underline hover:text-black">au.juujo.com</a>).</p>
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">1. Australian Privacy Principles (APPs) Compliance</h2>
   <p class="mb-4">We manage personal information in accordance with the Privacy Act 1988 (Cth) and Australian Privacy Principles. When you browse our site, we record standard device details, IP address, timezone, and cart cookies.</p>
@@ -12,12 +12,12 @@ export const privacyPolicyHtml = `
 
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">3. Access & Inquiries</h2>
-  <p class="mb-4">You may request access to or correction of personal information held in our records by contacting our Privacy Officer at <a href="mailto:support@buudy.com" class="underline hover:text-black">support@buudy.com</a>.</p>
+  <p class="mb-4">You may request access to or correction of personal information held in our records by contacting our Privacy Officer at <a href="mailto:support@juujo.com" class="underline hover:text-black">support@juujo.com</a>.</p>
 `;
 
 export const termsOfServiceHtml = `
   <p class="mb-4"><strong>OVERVIEW</strong></p>
-  <p class="mb-4">This website is operated by <strong>BUUDY.</strong> By visiting our site or purchasing our barefoot footwear, you engage in our Service and agree to be bound by these Terms of Service.</p>
+  <p class="mb-4">This website is operated by <strong>JUUJO.</strong> By visiting our site or purchasing our barefoot footwear, you engage in our Service and agree to be bound by these Terms of Service.</p>
   
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">Section 1 – Australian Consumer Law</h2>
@@ -29,7 +29,7 @@ export const termsOfServiceHtml = `
 `;
 
 export const refundPolicyHtml = `
-  <p class="mb-4">We stand behind the quality, anatomical design, and European craftsmanship of every pair of BUUDY. barefoot shoes.</p>
+  <p class="mb-4">We stand behind the quality, anatomical design, and European craftsmanship of every pair of JUUJO. barefoot shoes.</p>
   
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">1. 14-Day Return & Refund Window</h2>
@@ -50,7 +50,7 @@ export const refundPolicyHtml = `
 `;
 
 export const returnPolicyHtml = `
-  <p class="mb-4">We want you to experience the natural freedom and zero-drop comfort of BUUDY. barefoot footwear with complete confidence.</p>
+  <p class="mb-4">We want you to experience the natural freedom and zero-drop comfort of JUUJO. barefoot footwear with complete confidence.</p>
   <ul class="list-disc pl-5 space-y-3 mb-6 text-[#767676]">
     <li><strong>14-Day Exchange Guarantee:</strong> All Australian footwear orders are eligible for return or exchange within 14 days of delivery.</li>
     <li><strong>How to Start a Return:</strong> Submit your order number through our <a href="/pages/contact-us" class="underline hover:text-black">Contact Portal</a>.</li>
@@ -59,7 +59,7 @@ export const returnPolicyHtml = `
 `;
 
 export const cookiesPolicyHtml = `
-  <p class="mb-4">Cookies are compact text files stored on your browser to optimize navigation and personalize your shopping experience on BUUDY.</p>
+  <p class="mb-4">Cookies are compact text files stored on your browser to optimize navigation and personalize your shopping experience on JUUJO.</p>
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">Types of Cookies We Use</h2>
   <ul class="list-disc pl-5 space-y-2 mb-4 text-[#767676]">

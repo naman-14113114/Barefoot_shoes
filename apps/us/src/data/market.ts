@@ -1,6 +1,6 @@
 export const market = {
-  storeId: "buudy_us",
-  siteUrl: "https://us.buudy.com",
+  storeId: "juujo_us",
+  siteUrl: "https://us.juujo.com",
   locale: "en-US",
   currency: "USD" as const,
   currencySymbol: "$",
@@ -8,8 +8,8 @@ export const market = {
   countryCode: "US",
   marketLabel: "US",
   sizeSystem: "US",
-  checkoutSource: "us_buudy_barefoot",
-  checkoutBridgeUrl: "https://buudy.com/pages/add-to-cart",
+  checkoutSource: "us_juujo_barefoot",
+  checkoutBridgeUrl: "https://juujo.com/pages/add-to-cart",
   shipping: {
     freeThreshold: 180,
     standardRate: 7,
@@ -18,7 +18,7 @@ export const market = {
     deliveryDaysMax: 5,
   },
   support: {
-    email: "support@buudy.com",
+    email: "support@juujo.com",
     hours: "Monday – Friday, 9:00 AM – 6:00 PM EST",
   },
 } as const;

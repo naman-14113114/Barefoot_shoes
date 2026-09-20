@@ -7,9 +7,26 @@ import { CartProvider } from "@/components/cart/CartProvider";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 
 export const metadata: Metadata = {
-  title: "BUUDY. — Luxury Minimalist Barefoot Footwear",
+  metadataBase: new URL("https://us.juujo.com"),
+  title: {
+    default: "JUUJO. — Luxury Minimalist Barefoot Footwear | US",
+    template: "%s | JUUJO. US",
+  },
   description:
     "Handcrafted European barefoot footwear. Combining zero-drop biomechanics with Italian nappa leather and Mediterranean suede.",
+  applicationName: "JUUJO.",
+  openGraph: {
+    siteName: "JUUJO.",
+    title: "JUUJO. — Luxury Minimalist Barefoot Footwear | US",
+    description:
+      "Handcrafted European barefoot footwear. Combining zero-drop biomechanics with Italian nappa leather and Mediterranean suede.",
+    images: [
+      {
+        url: "/media/products/drifters-white/buudy-barefoot-shoes-drifters-white-model-studio-standing-hero.jpg",
+        alt: "JUUJO. Luxury Minimalist Barefoot Footwear US",
+      },
+    ],
+  },
   icons: {
     icon: "/favicon.ico",
   },

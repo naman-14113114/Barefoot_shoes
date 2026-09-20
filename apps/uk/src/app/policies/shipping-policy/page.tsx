@@ -3,7 +3,7 @@ import { PolicyView } from "@/components/policies/PolicyView";
 import { shippingPolicyHtml } from "@/data/shippingPolicy";
 
 export const metadata: Metadata = {
-  title: "Shipping & Delivery Policy | BUUDY. UK",
+  title: "Shipping & Delivery Policy | JUUJO. UK",
   description: "Royal Mail Tracked 24/48 delivery timelines, dispatch windows, and free shipping over £150.",
   alternates: {
     canonical: "/policies/shipping-policy",

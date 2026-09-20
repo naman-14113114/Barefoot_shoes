@@ -8,7 +8,7 @@ export function HeroBanner() {
       <div className="relative w-full aspect-[16/9] min-h-[420px] md:min-h-[520px] bg-[#eaeaea] overflow-hidden">
         <Image
           src="https://www.etq-amsterdam.com/cdn/shop/files/Desktop_v2_1.jpg?v=1787041152"
-          alt="BUUDY. Barefoot Footwear Essentials"
+          alt="JUUJO. Barefoot Footwear Essentials"
           fill
           priority={true}
           loading="eager"

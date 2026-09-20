@@ -3,8 +3,8 @@ import { PolicyView } from "@/components/policies/PolicyView";
 import { termsOfServiceHtml } from "@/data/policies";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | BUUDY. Barefoot Footwear",
-  description: "Terms and conditions governing footwear purchases and services on BUUDY. AU.",
+  title: "Terms of Service | JUUJO. Barefoot Footwear",
+  description: "Terms and conditions governing footwear purchases and services on JUUJO. AU.",
   alternates: {
     canonical: "/policies/terms-of-service",
   },

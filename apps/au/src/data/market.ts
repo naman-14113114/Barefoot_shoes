@@ -1,6 +1,6 @@
 export const market = {
-  storeId: "buudy_au",
-  siteUrl: "https://au.buudy.com",
+  storeId: "juujo_au",
+  siteUrl: "https://au.juujo.com",
   locale: "en-AU",
   currency: "AUD" as const,
   currencySymbol: "A$",
@@ -8,8 +8,8 @@ export const market = {
   countryCode: "AU",
   marketLabel: "AU",
   sizeSystem: "AU",
-  checkoutSource: "au_buudy_barefoot",
-  checkoutBridgeUrl: "https://buudy.com/pages/add-to-cart",
+  checkoutSource: "au_juujo_barefoot",
+  checkoutBridgeUrl: "https://juujo.com/pages/add-to-cart",
   shipping: {
     freeThreshold: 250,
     standardRate: 12,
@@ -18,7 +18,7 @@ export const market = {
     deliveryDaysMax: 4,
   },
   support: {
-    email: "support@buudy.com",
+    email: "support@juujo.com",
     hours: "Monday – Friday, 9:00 AM – 5:00 PM AEST",
   },
 } as const;

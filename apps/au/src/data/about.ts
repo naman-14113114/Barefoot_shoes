@@ -8,7 +8,7 @@ export const aboutPageData = {
     {
       number: "01",
       title: "Anatomical Zero-Drop Biomechanics",
-      copy: "Conventional fashion sneakers cram toes together and raise heels, throwing spinal alignment off balance. BUUDY. footwear features a wide foot-shaped toe box and 0mm drop, restoring natural posture, strengthening arches, and enhancing balance."
+      copy: "Conventional fashion sneakers cram toes together and raise heels, throwing spinal alignment off balance. JUUJO. footwear features a wide foot-shaped toe box and 0mm drop, restoring natural posture, strengthening arches, and enhancing balance."
     },
     {
       number: "02",

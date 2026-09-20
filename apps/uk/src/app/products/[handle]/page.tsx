@@ -29,44 +29,35 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Product Not Found | BUUDY. UK",
-      description: "The requested barefoot footwear model could not be found.",
+      title: "Product Not Found",
     };
   }
 
-  const pageTitle = `${product.title} — Zero-Drop Barefoot Trainer`;
-  const pageDescription = `${product.description} Handcrafted with zero-drop biomechanics, anatomical wide toe box, and ultra-flexible sole. Available now for £${product.price} with tracked UK delivery on buudy.co.uk.`;
-  const productUrl = `/products/${product.handle}`;
-  const ogImageUrl = product.primaryImage;
+  const pageDescription = `${product.description} Handcrafted with zero-drop biomechanics, anatomical wide toe box, and ultra-flexible sole. Available now for £${product.price} with tracked UK delivery on juujo.co.uk.`;
+  const pageImage = product.primaryImage;
+  const ogImageUrl = pageImage;
 
   return {
-    title: pageTitle,
+    title: product.title,
     description: pageDescription,
     alternates: {
-      canonical: productUrl,
-      languages: {
-        "en-GB": productUrl,
-      },
+      canonical: `/products/${product.handle}`,
     },
     openGraph: {
-      siteName: "BUUDY.",
-      type: "website",
-      url: productUrl,
-      locale: "en_GB",
-      title: `${pageTitle} | BUUDY. UK`,
+      title: product.title,
       description: pageDescription,
+      url: `/products/${product.handle}`,
+      siteName: "JUUJO.",
       images: [
         {
-          url: ogImageUrl,
-          width: 1200,
-          height: 1500,
-          alt: `${product.title} - Barefoot Shoes UK`,
+          url: pageImage,
+          alt: `${product.title} — JUUJO. UK`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.title} | BUUDY. UK`,
+      title: product.title,
       description: pageDescription,
       images: [ogImageUrl],
     },
@@ -101,7 +92,7 @@ export default async function ProductDetailPage({
     ),
     brand: {
       "@type": "Brand",
-      name: "BUUDY.",
+      name: "JUUJO.",
     },
     offers: {
       "@type": "Offer",
@@ -112,7 +103,7 @@ export default async function ProductDetailPage({
       itemCondition: "https://schema.org/NewCondition",
       seller: {
         "@type": "Organization",
-        name: "BUUDY. UK",
+        name: "JUUJO. UK",
       },
     },
     aggregateRating: {

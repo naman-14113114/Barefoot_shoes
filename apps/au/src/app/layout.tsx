@@ -7,9 +7,16 @@ import { CartProvider } from "@/components/cart/CartProvider";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 
 export const metadata: Metadata = {
-  title: "BUUDY. — Luxury Minimalist Barefoot Footwear",
+  title: {
+    default: "JUUJO. — Luxury Minimalist Barefoot Footwear | AU",
+    template: "%s | JUUJO. AU",
+  },
   description:
     "Handcrafted European barefoot footwear. Combining zero-drop biomechanics with Italian nappa leather and Mediterranean suede.",
+  applicationName: "JUUJO.",
+  openGraph: {
+    siteName: "JUUJO.",
+  },
   icons: {
     icon: "/favicon.ico",
   },

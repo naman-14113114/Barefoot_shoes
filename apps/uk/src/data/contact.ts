@@ -3,7 +3,7 @@ export const contactPageData = {
   title: "We are here to assist you.",
   description:
     "Whether you have questions regarding barefoot sizing, European leather care, order delivery, or size exchanges, our London-based support team is dedicated to providing prompt, thoughtful assistance.",
-  supportEmail: "support@buudy.co.uk",
+  supportEmail: "support@juujo.co.uk",
   operatingHours: "Monday – Friday, 9:00 AM – 5:00 PM GMT",
   headquarters: "13 Harefield Rd, Rickmansworth, England, WD3 1LY, UK",
   responseSLA: "Within 12 to 24 hours on business days",
@@ -29,7 +29,7 @@ export const contactPageData = {
   ],
   socialLinks: [
     { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61565686185222" },
-    { label: "Instagram", href: "https://www.instagram.com/buudy_com" },
-    { label: "YouTube", href: "https://www.youtube.com/@buudy-com" }
+    { label: "Instagram", href: "https://www.instagram.com/juujo_official" },
+    { label: "YouTube", href: "https://www.youtube.com/@juujo" }
   ]
 };

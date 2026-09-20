@@ -43,5 +43,5 @@ export const shippingPolicyHtml = `
 
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">4. Address Corrections</h2>
-  <p class="mb-4">Due to automated warehouse processing, we allow a <strong>6-hour grace window</strong> to adjust shipping addresses. Please reach us promptly via <a href="mailto:support@buudy.co.uk" class="underline hover:text-black">support@buudy.co.uk</a> if you notice an error in your address details.</p>
+  <p class="mb-4">Due to automated warehouse processing, we allow a <strong>6-hour grace window</strong> to adjust shipping addresses. Please reach us promptly via <a href="mailto:support@juujo.co.uk" class="underline hover:text-black">support@juujo.co.uk</a> if you notice an error in your address details.</p>
 `;

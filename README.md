@@ -1,4 +1,4 @@
-# Barefoot Shoes Storefront Monorepo (`BUUDY.`)
+# Barefoot Shoes Storefront Monorepo (`JUUJO.`)
 
 A high-performance multi-country barefoot footwear e-commerce monorepo built with Next.js 16 (App Router), React 19, Tailwind CSS 4, and Turborepo.
 

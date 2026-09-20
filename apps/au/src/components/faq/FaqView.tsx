@@ -46,7 +46,7 @@ export function FaqView() {
         {/* Header */}
         <div className="border-b border-[#eaeaea] pb-8 mb-8">
           <span className="inline-block text-[11px] uppercase tracking-wider text-[#767676] bg-[#f5f5f5] px-2.5 py-1 rounded-sm mb-3">
-            BUUDY. Help Center
+            JUUJO. Help Center
           </span>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-black mb-3">
             Frequently Asked Questions

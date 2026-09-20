@@ -7,17 +7,17 @@ export type FaqItem = {
 export const faqsData: FaqItem[] = [
   {
     category: "Sizing & Fit",
-    question: "How do BUUDY. barefoot shoes fit compared to traditional sneakers?",
-    answerHtml: "<p>BUUDY. shoes feature a wide, anatomically shaped toe box that allows your toes to splay naturally, combined with a true zero-drop sole (0mm heel-to-toe drop). They fit true to European sizing. We recommend ordering your normal EU shoe size. If you are between sizes or prefer extra room for thicker socks, we recommend sizing up one EU size.</p>"
+    question: "How do JUUJO. barefoot shoes fit compared to traditional sneakers?",
+    answerHtml: "<p>JUUJO. shoes feature a wide, anatomically shaped toe box that allows your toes to splay naturally, combined with a true zero-drop sole (0mm heel-to-toe drop). They fit true to European sizing. We recommend ordering your normal EU shoe size. If you are between sizes or prefer extra room for thicker socks, we recommend sizing up one EU size.</p>"
   },
   {
     category: "Sizing & Fit",
     question: "I am new to barefoot shoes. Is there an adaptation period?",
-    answerHtml: "<p>Yes. Because conventional footwear elevates your heel and constricts your forefoot, transitioning to zero-drop stimulates muscles in your feet, calves, and Achilles tendons that may have weakened over time. We recommend wearing your BUUDY. shoes for 2 to 3 hours a day initially, gradually increasing wear as your foot musculature adapts.</p>"
+    answerHtml: "<p>Yes. Because conventional footwear elevates your heel and constricts your forefoot, transitioning to zero-drop stimulates muscles in your feet, calves, and Achilles tendons that may have weakened over time. We recommend wearing your JUUJO. shoes for 2 to 3 hours a day initially, gradually increasing wear as your foot musculature adapts.</p>"
   },
   {
     category: "Sizing & Fit",
-    question: "Do BUUDY. shoes have removable insoles?",
+    question: "Do JUUJO. shoes have removable insoles?",
     answerHtml: "<p>Yes. Every pair includes a removable 3mm cushioned cork & EVA insole. You can wear the shoes with the insole for a cushioned barefoot entry, or remove it for maximum ground feel and sensory feedback.</p>"
   },
   {
@@ -47,7 +47,7 @@ export const faqsData: FaqItem[] = [
   },
   {
     category: "Materials & Care",
-    question: "Where are BUUDY. barefoot shoes crafted?",
+    question: "Where are JUUJO. barefoot shoes crafted?",
     answerHtml: "<p>Our footwear is handcrafted in family-owned artisanal workshops in Portugal using full-grain Italian nappa leather from Gruppo Mastrotto and premium Mediterranean suede. Every pair passes multi-stage European quality control.</p>"
   },
   {

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { OrderTrackingView } from "@/components/tracking/OrderTrackingView";
 
 export const metadata: Metadata = {
-  title: "Track Your Order | BUUDY. UK",
-  description: "Track your BUUDY. barefoot footwear delivery with live Royal Mail tracking milestones.",
+  title: "Track Your Order",
+  description: "Track your JUUJO. barefoot footwear delivery with live Royal Mail tracking milestones.",
   alternates: {
     canonical: "/order-tracking",
   },

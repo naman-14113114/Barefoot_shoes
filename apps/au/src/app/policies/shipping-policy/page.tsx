@@ -3,7 +3,7 @@ import { PolicyView } from "@/components/policies/PolicyView";
 import { shippingPolicyHtml } from "@/data/shippingPolicy";
 
 export const metadata: Metadata = {
-  title: "Shipping & Delivery Policy | BUUDY. AU",
+  title: "Shipping & Delivery Policy | JUUJO. AU",
   description: "Australia Post Express delivery timelines, dispatch windows, and free shipping over A$250.",
   alternates: {
     canonical: "/policies/shipping-policy",

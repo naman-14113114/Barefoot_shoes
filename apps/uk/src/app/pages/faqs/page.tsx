@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FaqView } from "@/components/faq/FaqView";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | BUUDY. Barefoot Footwear",
+  title: "Frequently Asked Questions | JUUJO. Barefoot Footwear",
   description: "Find answers regarding barefoot shoe sizing, zero-drop benefits, Royal Mail shipping, and 14-day free exchanges.",
   alternates: {
     canonical: "/pages/faqs",

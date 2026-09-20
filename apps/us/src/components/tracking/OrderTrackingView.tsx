@@ -137,7 +137,7 @@ export function OrderTrackingView() {
           <div className="p-5 border border-[#eaeaea] bg-white space-y-2">
             <h3 className="text-sm font-medium text-black">Can I modify my shipping address?</h3>
             <p className="text-[13px] text-[#767676] leading-relaxed">
-              If your package has not yet entered carrier transit, contact <a href="mailto:support@buudy.com" className="underline text-black font-medium">support@buudy.com</a> immediately.
+              If your package has not yet entered carrier transit, contact <a href="mailto:support@juujo.com" className="underline text-black font-medium">support@juujo.com</a> immediately.
             </p>
           </div>
         </div>

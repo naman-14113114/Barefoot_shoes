@@ -28,7 +28,7 @@ export function SizeGuideView() {
             Footwear Size & Measurement Guide
           </h1>
           <p className="text-[15px] text-[#767676] leading-relaxed max-w-2xl">
-            BUUDY. shoes feature a generous anatomical toe box and true European sizing. Use the conversion table and measurement steps below to identify your optimal fit.
+            JUUJO. shoes feature a generous anatomical toe box and true European sizing. Use the conversion table and measurement steps below to identify your optimal fit.
           </p>
 
           <div className="mt-6 flex items-center gap-3">

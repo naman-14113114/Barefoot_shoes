@@ -1,6 +1,6 @@
-// UK Localized Policy Content for BUUDY. Barefoot Luxury Footwear
+// UK Localized Policy Content for JUUJO. Barefoot Luxury Footwear
 export const privacyPolicyHtml = `
-  <p class="mb-4">This Privacy Policy outlines how <strong>BUUDY.</strong> ("we", "us", or "our") collects, utilizes, and protects your personal information when you visit, browse, or purchase handcrafted barefoot footwear from our store (<a href="/" class="underline hover:text-black">buudy.co.uk</a>).</p>
+  <p class="mb-4">This Privacy Policy outlines how <strong>JUUJO.</strong> ("we", "us", or "our") collects, utilizes, and protects your personal information when you visit, browse, or purchase handcrafted barefoot footwear from our store (<a href="/" class="underline hover:text-black">juujo.co.uk</a>).</p>
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">1. Personal Information We Collect</h2>
   <p class="mb-4">When you access our storefront, we automatically record specific device information, including web browser specifications, IP address, timezone, and essential functional cookies installed on your device. Furthermore, as you explore our footwear collections, we log details regarding viewed product models, search queries, referring domains, and browsing interactions ("Device Information").</p>
@@ -23,7 +23,7 @@ export const privacyPolicyHtml = `
 
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">4. GDPR & Your UK Data Rights</h2>
-  <p class="mb-4">Under the UK General Data Protection Regulation (UK GDPR) and Data Protection Act 2018, UK residents hold the right to access, rectify, port, or request erasure of personal data held within our systems. To exercise these statutory rights, please contact our Data Privacy Officer at <a href="mailto:support@buudy.co.uk" class="underline hover:text-black">support@buudy.co.uk</a>.</p>
+  <p class="mb-4">Under the UK General Data Protection Regulation (UK GDPR) and Data Protection Act 2018, UK residents hold the right to access, rectify, port, or request erasure of personal data held within our systems. To exercise these statutory rights, please contact our Data Privacy Officer at <a href="mailto:support@juujo.co.uk" class="underline hover:text-black">support@juujo.co.uk</a>.</p>
 
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">5. Data Retention & Security</h2>
@@ -32,7 +32,7 @@ export const privacyPolicyHtml = `
 
 export const termsOfServiceHtml = `
   <p class="mb-4"><strong>OVERVIEW</strong></p>
-  <p class="mb-4">This website is operated by <strong>BUUDY.</strong> Throughout the site, the terms "we", "us" and "our" refer to BUUDY. By visiting our site or purchasing our barefoot footwear, you engage in our Service and agree to be bound by these Terms of Service.</p>
+  <p class="mb-4">This website is operated by <strong>JUUJO.</strong> Throughout the site, the terms "we", "us" and "our" refer to JUUJO. By visiting our site or purchasing our barefoot footwear, you engage in our Service and agree to be bound by these Terms of Service.</p>
   
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">Section 1 – Online Store Terms</h2>
@@ -57,7 +57,7 @@ export const termsOfServiceHtml = `
 `;
 
 export const refundPolicyHtml = `
-  <p class="mb-4">We stand behind the quality, anatomical design, and European craftsmanship of every pair of BUUDY. barefoot shoes. The following terms govern our refund and replacement procedures.</p>
+  <p class="mb-4">We stand behind the quality, anatomical design, and European craftsmanship of every pair of JUUJO. barefoot shoes. The following terms govern our refund and replacement procedures.</p>
   
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">1. 14-Day Return & Refund Window</h2>
@@ -82,7 +82,7 @@ export const refundPolicyHtml = `
 `;
 
 export const returnPolicyHtml = `
-  <p class="mb-4">We want you to experience the natural freedom and zero-drop comfort of BUUDY. barefoot footwear with complete confidence.</p>
+  <p class="mb-4">We want you to experience the natural freedom and zero-drop comfort of JUUJO. barefoot footwear with complete confidence.</p>
   <ul class="list-disc pl-5 space-y-3 mb-6 text-[#767676]">
     <li><strong>14-Day Exchange Guarantee:</strong> All UK footwear orders are eligible for return or exchange within 14 days of delivery.</li>
     <li><strong>How to Start a Return:</strong> Submit your order number and inquiry through our <a href="/pages/contact-us" class="underline hover:text-black">Contact Portal</a>. Our support team will respond within 24 hours with return instructions.</li>
@@ -91,7 +91,7 @@ export const returnPolicyHtml = `
 `;
 
 export const cookiesPolicyHtml = `
-  <p class="mb-4">Cookies are compact text files stored on your browser to optimize navigation and personalize your shopping experience on BUUDY.</p>
+  <p class="mb-4">Cookies are compact text files stored on your browser to optimize navigation and personalize your shopping experience on JUUJO.</p>
   <hr class="my-6 border-[#eaeaea]" />
   <h2 class="text-lg font-medium text-black mt-6 mb-3">Types of Cookies We Use</h2>
   <ul class="list-disc pl-5 space-y-2 mb-4 text-[#767676]">

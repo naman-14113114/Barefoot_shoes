@@ -1,10 +1,12 @@
 import * as React from "react";
 
-export const BuudyLogo = ({ className = "h-5 w-auto" }: { className?: string }) => (
+export const JuujoLogo = ({ className = "h-5 w-auto" }: { className?: string }) => (
   <span className={`font-medium tracking-[0.08em] text-[20px] leading-none inline-block ${className}`}>
-    BUUDY.
+    JUUJO.
   </span>
 );
+
+export const BuudyLogo = JuujoLogo;
 
 export const StarRating = ({ rating = 4.8, count }: { rating?: number; count?: number }) => (
   <div className="inline-flex items-center gap-1 text-[12px] text-[#000000]">

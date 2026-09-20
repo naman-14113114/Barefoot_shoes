@@ -26,7 +26,7 @@ export function ContactView() {
         body: JSON.stringify({
           ...formData,
           access_key: "a7d01fde-38a9-408f-a6f2-184458c2ccc3",
-          subject: `BUUDY AU Support Request: ${formData.subject} - Order: ${formData.orderNumber || "N/A"}`,
+          subject: `JUUJO AU Support Request: ${formData.subject} - Order: ${formData.orderNumber || "N/A"}`,
           from_name: `${formData.firstName} ${formData.lastName}`.trim(),
           reply_to: formData.email,
         }),

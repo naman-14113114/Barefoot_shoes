@@ -33,7 +33,7 @@ export function PolicyView({
         {/* Header */}
         <div className="border-b border-[#eaeaea] pb-8 mb-10">
           <span className="inline-block text-[11px] uppercase tracking-wider text-[#767676] bg-[#f5f5f5] px-2.5 py-1 rounded-sm mb-3">
-            BUUDY. Legal & Store Policies
+            JUUJO. Legal & Store Policies
           </span>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-black mb-3">
             {title}

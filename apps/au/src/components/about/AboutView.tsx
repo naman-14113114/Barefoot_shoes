@@ -14,7 +14,7 @@ export function AboutView() {
             Home
           </Link>
           <span>/</span>
-          <span className="text-black font-medium">About BUUDY.</span>
+          <span className="text-black font-medium">About JUUJO.</span>
         </nav>
 
         {/* Hero Headline */}

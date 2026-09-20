@@ -3,9 +3,9 @@ export const contactPageData = {
   title: "We are here to assist you.",
   description:
     "Whether you have questions regarding barefoot sizing, European leather care, order delivery, or size exchanges, our US support team is dedicated to providing prompt, thoughtful assistance.",
-  supportEmail: "support@buudy.com",
+  supportEmail: "support@juujo.com",
   operatingHours: "Monday – Friday, 9:00 AM – 5:00 PM EST",
-  headquarters: "BUUDY. USA, 13 Harefield Rd, Rickmansworth, England, WD3 1LY",
+  headquarters: "JUUJO. USA, 13 Harefield Rd, Rickmansworth, England, WD3 1LY",
   responseSLA: "Within 12 to 24 hours on business days",
   helpCards: [
     {
@@ -29,7 +29,7 @@ export const contactPageData = {
   ],
   socialLinks: [
     { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61565686185222" },
-    { label: "Instagram", href: "https://www.instagram.com/buudy_com" },
-    { label: "YouTube", href: "https://www.youtube.com/@buudy-com" }
+    { label: "Instagram", href: "https://www.instagram.com/juujo_official" },
+    { label: "YouTube", href: "https://www.youtube.com/@juujo" }
   ]
 };

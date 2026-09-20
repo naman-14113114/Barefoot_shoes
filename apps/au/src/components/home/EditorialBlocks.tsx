@@ -17,13 +17,13 @@ export function EditorialBlocks() {
           <div className="relative w-full aspect-[4/5] bg-[#eaeaea] overflow-hidden">
             <Image
               src="https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Brillen_06_v1LR.png?v=1767613240"
-              alt="LENSE X BUUDY."
+              alt="LENSE X JUUJO."
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-center"
             />
           </div>
-          <h3 className="text-[16px] font-medium text-[#000000]">LENSE X BUUDY.</h3>
+          <h3 className="text-[16px] font-medium text-[#000000]">LENSE X JUUJO.</h3>
           <p className="text-[13px] text-[#767676]">A frame built from two perspectives.</p>
         </div>
 
@@ -31,13 +31,13 @@ export function EditorialBlocks() {
           <div className="relative w-full aspect-[4/5] bg-[#eaeaea] overflow-hidden">
             <Image
               src="https://www.etq-amsterdam.com/cdn/shop/files/Chesterfield_X_ETQ.jpg?v=1780568086"
-              alt="Chesterfield X BUUDY."
+              alt="Chesterfield X JUUJO."
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-center"
             />
           </div>
-          <h3 className="text-[16px] font-medium text-[#000000]">Chesterfield X BUUDY.</h3>
+          <h3 className="text-[16px] font-medium text-[#000000]">Chesterfield X JUUJO.</h3>
           <p className="text-[13px] text-[#767676]">Built for the spaces between destinations.</p>
         </div>
       </section>

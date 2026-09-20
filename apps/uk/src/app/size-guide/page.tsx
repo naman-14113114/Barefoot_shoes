@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SizeGuideView } from "@/components/guide/SizeGuideView";
 
 export const metadata: Metadata = {
-  title: "Size & Measurement Guide | BUUDY. Barefoot Footwear",
+  title: "Size & Measurement Guide",
   description: "Find your ideal barefoot footwear fit with our European, UK, and US conversion table and foot measurement guide.",
   alternates: {
     canonical: "/size-guide",

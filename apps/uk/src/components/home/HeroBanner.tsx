@@ -9,7 +9,7 @@ export function HeroBanner() {
         {/* Hero Background Image (Priority preloaded) */}
         <Image
           src="https://www.etq-amsterdam.com/cdn/shop/files/Desktop_v2_1.jpg?v=1787041152"
-          alt="BUUDY. Barefoot Footwear Essentials"
+          alt="JUUJO. Barefoot Footwear Essentials"
           fill
           priority={true}
           loading="eager"

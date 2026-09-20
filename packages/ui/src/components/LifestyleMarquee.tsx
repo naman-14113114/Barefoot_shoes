@@ -15,37 +15,37 @@ export const DRIFTERS_LIFESTYLE_IMAGES: LifestyleImageItem[] = [
   {
     id: "buudy-cyan-trail",
     src: "/media/drifters/buudy-barefoot-shoes-drifters-cyan-trail-hiking.jpg",
-    alt: "Buudy Barefoot Shoes Drifters Cyan Trail Hiking on Mountain Rock",
+    alt: "Juujo Barefoot Shoes Drifters Cyan Trail Hiking on Mountain Rock",
     label: "Trail & Hiking",
   },
   {
     id: "buudy-gym-workout",
     src: "/media/drifters/buudy-barefoot-shoes-drifters-gym-workout-flexibility.jpg",
-    alt: "Buudy Barefoot Shoes Drifters Gym Workout Ankle & Toe Flexibility",
+    alt: "Juujo Barefoot Shoes Drifters Gym Workout Ankle & Toe Flexibility",
     label: "Gym & Training",
   },
   {
     id: "buudy-white-rock",
     src: "/media/drifters/buudy-barefoot-shoes-drifters-white-zero-drop-rock-grip.jpg",
-    alt: "Buudy Barefoot Shoes Drifters White Zero Drop Rock Grip & Natural Stride",
+    alt: "Juujo Barefoot Shoes Drifters White Zero Drop Rock Grip & Natural Stride",
     label: "Zero-Drop Grip",
   },
   {
     id: "buudy-black-cycling",
     src: "/media/drifters/buudy-barefoot-shoes-drifters-black-cycling-training.jpg",
-    alt: "Buudy Barefoot Shoes Drifters Black Outdoor Cycling & Athletic Training",
+    alt: "Juujo Barefoot Shoes Drifters Black Outdoor Cycling & Athletic Training",
     label: "Everyday Active",
   },
   {
     id: "buudy-beach-water",
     src: "/media/drifters/buudy-barefoot-shoes-drifters-beach-water-barefoot-freedom.jpg",
-    alt: "Buudy Barefoot Shoes Drifters Beach Water & Sand Barefoot Freedom",
+    alt: "Juujo Barefoot Shoes Drifters Beach Water & Sand Barefoot Freedom",
     label: "Water & Shore",
   },
   {
     id: "buudy-flexible-torsion",
     src: "/media/drifters/buudy-barefoot-shoes-drifters-ultra-flexible-sole-torsion.jpg",
-    alt: "Buudy Barefoot Shoes Drifters Ultra-Flexible Sole 360 Degree Torsion",
+    alt: "Juujo Barefoot Shoes Drifters Ultra-Flexible Sole 360 Degree Torsion",
     label: "360° Flexibility",
   },
 ];
@@ -55,37 +55,37 @@ export const CLOUDERS_LIFESTYLE_IMAGES: LifestyleImageItem[] = [
   {
     id: "buudy-clouders-yoga-stretch",
     src: "/media/clouders/buudy-barefoot-shoes-clouders-gym-yoga-stretch.jpg",
-    alt: "Buudy Barefoot Shoes Clouders Beige Gym Yoga Flexibility and Mat Stretching",
+    alt: "Juujo Barefoot Shoes Clouders Beige Gym Yoga Flexibility and Mat Stretching",
     label: "Gym & Flexibility",
   },
   {
     id: "buudy-clouders-white-floor-action",
     src: "/media/clouders/buudy-barefoot-shoes-clouders-white-gym-floor-action.jpg",
-    alt: "Buudy Barefoot Shoes Clouders White Indoor Gym Training and Agility",
+    alt: "Juujo Barefoot Shoes Clouders White Indoor Gym Training and Agility",
     label: "Indoor Agility",
   },
   {
     id: "buudy-clouders-black-turf",
     src: "/media/clouders/buudy-barefoot-shoes-clouders-black-turf-training.jpg",
-    alt: "Buudy Barefoot Shoes Clouders Black Turf Training and Dynamic Athletic Stride",
+    alt: "Juujo Barefoot Shoes Clouders Black Turf Training and Dynamic Athletic Stride",
     label: "Turf & Training",
   },
   {
     id: "buudy-clouders-beige-rock",
     src: "/media/clouders/buudy-barefoot-shoes-clouders-beige-rock-outdoor-lifestyle.jpg",
-    alt: "Buudy Barefoot Shoes Clouders Beige Zero-Drop Outdoor Trail and Rock Comfort",
+    alt: "Juujo Barefoot Shoes Clouders Beige Zero-Drop Outdoor Trail and Rock Comfort",
     label: "Outdoor Trail",
   },
   {
     id: "buudy-clouders-gray-stride",
     src: "/media/clouders/buudy-barefoot-shoes-clouders-gray-athletic-stride.jpg",
-    alt: "Buudy Barefoot Shoes Clouders Gray Anatomical Wide Toe Box Athletic Stride",
+    alt: "Juujo Barefoot Shoes Clouders Gray Anatomical Wide Toe Box Athletic Stride",
     label: "Wide Toe Box",
   },
   {
     id: "buudy-clouders-beach-sand",
     src: "/media/clouders/buudy-barefoot-shoes-clouders-beach-sand-shore-walking.jpg",
-    alt: "Buudy Barefoot Shoes Clouders Beach Sand Shore Walking and Barefoot Freedom",
+    alt: "Juujo Barefoot Shoes Clouders Beach Sand Shore Walking and Barefoot Freedom",
     label: "Beach & Shore",
   },
 ];
@@ -94,37 +94,37 @@ export const ROAMERS_LIFESTYLE_IMAGES: LifestyleImageItem[] = [
   {
     id: "buudy-roamers-black-stride",
     src: "/media/roamers/buudy-barefoot-shoes-roamers-black-coal-natural-stride.jpg",
-    alt: "Buudy Barefoot Shoes Roamers Black Coal Natural Grounding Stride by the Stream",
+    alt: "Juujo Barefoot Shoes Roamers Black Coal Natural Grounding Stride by the Stream",
     label: "Natural Stride",
   },
   {
     id: "buudy-roamers-blue-trail",
     src: "/media/roamers/buudy-barefoot-shoes-roamers-ice-blue-lightweight-fit.jpg",
-    alt: "Buudy Barefoot Shoes Roamers Ice Blue Featherlight Anatomical Trail Fit",
+    alt: "Juujo Barefoot Shoes Roamers Ice Blue Featherlight Anatomical Trail Fit",
     label: "Outdoor Trail",
   },
   {
     id: "buudy-roamers-beige-comfort",
     src: "/media/roamers/buudy-barefoot-shoes-roamers-beige-breathable-comfort.jpg",
-    alt: "Buudy Barefoot Shoes Roamers Beige Breathable Barefoot Comfort on Rock",
+    alt: "Juujo Barefoot Shoes Roamers Beige Breathable Barefoot Comfort on Rock",
     label: "Breathable Comfort",
   },
   {
     id: "buudy-roamers-black-walking",
     src: "/media/roamers/buudy-barefoot-shoes-roamers-black-coal-urban-walking.jpg",
-    alt: "Buudy Barefoot Shoes Roamers Black Coal All-Day In-Motion Walking",
+    alt: "Juujo Barefoot Shoes Roamers Black Coal All-Day In-Motion Walking",
     label: "All-Day Walking",
   },
   {
     id: "buudy-roamers-blue-gym",
     src: "/media/roamers/buudy-barefoot-shoes-roamers-ice-blue-gym-training.jpg",
-    alt: "Buudy Barefoot Shoes Roamers Ice Blue Gym and Fitness Workout Training",
+    alt: "Juujo Barefoot Shoes Roamers Ice Blue Gym and Fitness Workout Training",
     label: "Gym & Fitness",
   },
   {
     id: "buudy-roamers-gray-traction",
     src: "/media/roamers/buudy-barefoot-shoes-roamers-ash-gray-everyday-sneaker.jpg",
-    alt: "Buudy Barefoot Shoes Roamers Ash Gray Everyday Sneaker Flexible Traction",
+    alt: "Juujo Barefoot Shoes Roamers Ash Gray Everyday Sneaker Flexible Traction",
     label: "Flexible Traction",
   },
 ];
@@ -207,7 +207,7 @@ export function LifestyleMarquee({
 
   return (
     <section
-      aria-label="Buudy Barefoot Shoes Lifestyle Gallery"
+      aria-label="Juujo Barefoot Shoes Lifestyle Gallery"
       className={cn(
         "w-full overflow-hidden bg-[#ffffff] py-6 md:py-8 border-y border-[#eaeaea] relative",
         className

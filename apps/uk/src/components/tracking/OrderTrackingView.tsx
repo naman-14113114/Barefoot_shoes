@@ -104,7 +104,7 @@ export function OrderTrackingView() {
                 <div className="flex gap-3 text-[13px]">
                   <div className="w-2.5 h-2.5 rounded-full bg-[#eaeaea] mt-1.5 shrink-0" />
                   <div>
-                    <p className="font-medium text-[#767676]">Dispatched from BUUDY. London Hub</p>
+                    <p className="font-medium text-[#767676]">Dispatched from JUUJO. London Hub</p>
                     <p className="text-[#929292] text-xs">Same-day dispatch completed</p>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export function OrderTrackingView() {
           <div className="p-5 border border-[#eaeaea] bg-white space-y-2">
             <h3 className="text-sm font-medium text-black">Can I modify my delivery address?</h3>
             <p className="text-[13px] text-[#767676] leading-relaxed">
-              If your package has not yet entered the sorting network, contact <a href="mailto:support@buudy.co.uk" className="underline text-black font-medium">support@buudy.co.uk</a> immediately.
+              If your package has not yet entered the sorting network, contact <a href="mailto:support@juujo.co.uk" className="underline text-black font-medium">support@juujo.co.uk</a> immediately.
             </p>
           </div>
         </div>

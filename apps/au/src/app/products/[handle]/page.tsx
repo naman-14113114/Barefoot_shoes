@@ -28,44 +28,35 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: "Product Not Found | BUUDY. AU",
-      description: "The requested barefoot footwear model could not be found.",
+      title: "Product Not Found",
     };
   }
 
-  const pageTitle = `${product.title} — Zero-Drop Barefoot Trainer`;
-  const pageDescription = `${product.description} Handcrafted with zero-drop biomechanics, anatomical wide toe box, and ultra-flexible sole. Available now for A$${product.price} on au.buudy.com.`;
-  const productUrl = `/products/${product.handle}`;
+  const pageDescription = `${product.description} Handcrafted with zero-drop biomechanics, anatomical wide toe box, and ultra-flexible sole. Available now for A$${product.price} on au.juujo.com.`;
   const ogImageUrl = product.primaryImage;
+  const pageImage = ogImageUrl;
 
   return {
-    title: pageTitle,
+    title: product.title,
     description: pageDescription,
     alternates: {
-      canonical: productUrl,
-      languages: {
-        "en-AU": productUrl,
-      },
+      canonical: `/products/${product.handle}`,
     },
     openGraph: {
-      siteName: "BUUDY.",
-      type: "website",
-      url: productUrl,
-      locale: "en_AU",
-      title: `${pageTitle} | BUUDY. AU`,
+      title: product.title,
       description: pageDescription,
+      url: `/products/${product.handle}`,
+      siteName: "JUUJO.",
       images: [
         {
-          url: ogImageUrl,
-          width: 1200,
-          height: 1500,
-          alt: `${product.title} - Barefoot Shoes AU`,
+          url: pageImage,
+          alt: `${product.title} — JUUJO. AU`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.title} | BUUDY. AU`,
+      title: product.title,
       description: pageDescription,
       images: [ogImageUrl],
     },
@@ -100,7 +91,7 @@ export default async function ProductDetailPage({
     ),
     brand: {
       "@type": "Brand",
-      name: "BUUDY.",
+      name: "JUUJO.",
     },
     offers: {
       "@type": "Offer",
@@ -111,7 +102,7 @@ export default async function ProductDetailPage({
       itemCondition: "https://schema.org/NewCondition",
       seller: {
         "@type": "Organization",
-        name: "BUUDY. AU",
+        name: "JUUJO. AU",
       },
     },
     aggregateRating: {
