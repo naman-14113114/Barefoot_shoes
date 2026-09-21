@@ -263,6 +263,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "lt-01-essence-black",
+      handle: "lt-01-essence-black",
+      title: "LT 01 Essence Black",
+      subtitle: "Essence Full-Grain Leather",
+      price: 59,
+      compareAtPrice: 119,
+      badge: "Trending",
+      image: "/media/products/lt-01-essence-black/buudy-barefoot-shoes-lt-01-essence-black-lateral-side-profile-hero.jpg",
+      variantId: "100099504",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",

@@ -182,6 +182,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "lt-01-court-lite-gum-white",
       img: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
     },
+    {
+      name: "Essence Black",
+      handle: "lt-01-essence-black",
+      img: "/media/products/lt-01-essence-black/buudy-barefoot-shoes-lt-01-essence-black-lateral-side-profile-hero.jpg",
+    },
   ];
 
   const rs01Colorways = [
@@ -311,6 +316,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "lt-01-court-lite-gum-white",
       img: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
     },
+    {
+      name: "Essence Black",
+      handle: "lt-01-essence-black",
+      img: "/media/products/lt-01-essence-black/buudy-barefoot-shoes-lt-01-essence-black-lateral-side-profile-hero.jpg",
+    },
   ];
 
   const colorways = product.handle.startsWith("drifters")
@@ -323,7 +333,7 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
           ? lt03Colorways
           : product.handle.startsWith("lt-02")
             ? lt02Colorways
-            : product.handle.startsWith("lt-01-court-lite")
+            : product.handle.startsWith("lt-01-court-lite") || product.handle.startsWith("lt-01-essence")
               ? lt01CourtLiteColorways
               : product.handle.startsWith("lt-01-platform")
                 ? lt01PlatformColorways

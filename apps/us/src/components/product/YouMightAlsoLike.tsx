@@ -341,6 +341,32 @@ const US_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         color: "#c49a6c",
         image: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
       },
+      {
+        name: "Essence Black",
+        color: "#18181b",
+        image: "/media/products/lt-01-essence-black/buudy-barefoot-shoes-lt-01-essence-black-lateral-side-profile-hero.jpg",
+      },
+    ],
+  },
+  {
+    id: "lt-01-essence-black",
+    handle: "lt-01-essence-black",
+    title: "LT 01 ESSENCE BLACK",
+    disciplineTags: "FULL-GRAIN LEATHER, HERITAGE COURT, ZERO DROP",
+    price: 59,
+    compareAtPrice: 119,
+    currencySymbol: "$",
+    swatches: [
+      {
+        name: "Essence Black",
+        color: "#18181b",
+        image: "/media/products/lt-01-essence-black/buudy-barefoot-shoes-lt-01-essence-black-lateral-side-profile-hero.jpg",
+      },
+      {
+        name: "Gum White",
+        color: "#c49a6c",
+        image: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
+      },
     ],
   },
   {
