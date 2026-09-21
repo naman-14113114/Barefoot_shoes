@@ -207,6 +207,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
       },
       {
+        name: "Jet Black",
+        color: "#111827",
+        image: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
+      },
+      {
         name: "Anthracite",
         color: "#374151",
         image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
@@ -233,6 +238,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
       },
       {
+        name: "Jet Black",
+        color: "#111827",
+        image: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
+      },
+      {
         name: "Desert Taupe",
         color: "#c4b5a5",
         image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
@@ -246,6 +256,42 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "Forest Green",
         color: "#556B2F",
         image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      },
+    ],
+  },
+  {
+    id: "rs-01-runner-jet-black",
+    handle: "rs-01-runner-jet-black",
+    title: "RS 01 RUNNER JET BLACK",
+    disciplineTags: "ROAD RUNNING, ATHLETIC PERFORMANCE, ZERO DROP",
+    price: 49,
+    compareAtPrice: 99,
+    currencySymbol: "£",
+    swatches: [
+      {
+        name: "Jet Black",
+        color: "#111827",
+        image: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "All Black",
+        color: "#18181b",
+        image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Anthracite",
+        color: "#374151",
+        image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Forest Green",
+        color: "#556B2F",
+        image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Desert Taupe",
+        color: "#c4b5a5",
+        image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
       },
     ],
   },
@@ -267,6 +313,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "All Black",
         color: "#18181b",
         image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Jet Black",
+        color: "#111827",
+        image: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
       },
       {
         name: "Desert Taupe",
@@ -303,6 +354,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "All Black",
         color: "#18181b",
         image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Jet Black",
+        color: "#111827",
+        image: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
       },
       {
         name: "Desert Taupe",

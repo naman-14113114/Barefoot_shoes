@@ -201,6 +201,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       img: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
     },
     {
+      name: "Jet Black",
+      handle: "rs-01-runner-jet-black",
+      img: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
+    },
+    {
       name: "Anthracite",
       handle: "rs-01-runner-anthracite",
       img: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
@@ -295,6 +300,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       name: "All Black",
       handle: "rs-01-runner-all-black",
       img: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+    },
+    {
+      name: "Jet Black",
+      handle: "rs-01-runner-jet-black",
+      img: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
     },
     {
       name: "Anthracite",

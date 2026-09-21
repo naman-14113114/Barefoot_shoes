@@ -239,6 +239,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "rs-01-runner-jet-black",
+      handle: "rs-01-runner-jet-black",
+      title: "RS 01 Runner Jet Black",
+      subtitle: "Technical Mesh & Suede",
+      price: 59,
+      compareAtPrice: 119,
+      badge: "Most Wanted",
+      image: "/media/products/rs-01-runner-jet-black/buudy-barefoot-shoes-rs-01-runner-jet-black-lateral-profile-hero.jpg",
+      variantId: "100099023",
+      sizeEu: 42,
+    },
+    {
       id: "lt-01-platform-white",
       handle: "lt-01-platform-white",
       title: "LT 01 Platform White",
