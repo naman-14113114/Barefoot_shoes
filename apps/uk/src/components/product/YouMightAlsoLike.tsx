@@ -211,6 +211,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         color: "#374151",
         image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
       },
+      {
+        name: "Forest Green",
+        color: "#556B2F",
+        image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      },
     ],
   },
   {
@@ -237,6 +242,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         color: "#374151",
         image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
       },
+      {
+        name: "Forest Green",
+        color: "#556B2F",
+        image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      },
     ],
   },
   {
@@ -248,6 +258,42 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
     compareAtPrice: 99,
     currencySymbol: "£",
     swatches: [
+      {
+        name: "Anthracite",
+        color: "#374151",
+        image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+      },
+      {
+        name: "All Black",
+        color: "#18181b",
+        image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Desert Taupe",
+        color: "#c4b5a5",
+        image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
+      },
+      {
+        name: "Forest Green",
+        color: "#556B2F",
+        image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      },
+    ],
+  },
+  {
+    id: "rs-01-runner-forest-green",
+    handle: "rs-01-runner-forest-green",
+    title: "RS 01 RUNNER FOREST GREEN",
+    disciplineTags: "ROAD RUNNING, ATHLETIC PERFORMANCE, ZERO DROP",
+    price: 49,
+    compareAtPrice: 99,
+    currencySymbol: "£",
+    swatches: [
+      {
+        name: "Forest Green",
+        color: "#556B2F",
+        image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      },
       {
         name: "Anthracite",
         color: "#374151",

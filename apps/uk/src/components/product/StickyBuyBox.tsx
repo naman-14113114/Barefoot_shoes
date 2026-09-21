@@ -200,6 +200,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "rs-01-runner-anthracite",
       img: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
     },
+    {
+      name: "Forest Green",
+      handle: "rs-01-runner-forest-green",
+      img: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+    },
   ];
 
   const lt01PlatformColorways = [
@@ -290,6 +295,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       name: "Anthracite",
       handle: "rs-01-runner-anthracite",
       img: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+    },
+    {
+      name: "Forest Green",
+      handle: "rs-01-runner-forest-green",
+      img: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
     },
     {
       name: "Platform White",

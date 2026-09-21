@@ -227,6 +227,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "rs-01-runner-forest-green",
+      handle: "rs-01-runner-forest-green",
+      title: "RS 01 Runner Forest Green",
+      subtitle: "Technical Mesh & Suede",
+      price: 89,
+      compareAtPrice: 179,
+      badge: "Trending",
+      image: "/media/products/rs-01-runner-forest-green/buudy-barefoot-shoes-rs-01-runner-forest-green-lateral-profile-hero.jpg",
+      variantId: "100099022",
+      sizeEu: 42,
+    },
+    {
       id: "lt-01-platform-white",
       handle: "lt-01-platform-white",
       title: "LT 01 Platform White",
