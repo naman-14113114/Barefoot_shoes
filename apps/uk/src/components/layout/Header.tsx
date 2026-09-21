@@ -109,7 +109,7 @@ const MENU_COLUMNS: Record<MenuLabel, { title: string; links: { label: string; h
       title: "Popular",
       links: [
         { label: "Most wanted", href: "/products/lt-03-premium-nappa-white" },
-        { label: "Court Lite", href: "/products/lt-01-court-lite-white" },
+        { label: "Court Lite", href: "/products/lt-01-court-lite-gum-white" },
         { label: "All sale", href: "/collections/sneakers" },
       ],
     },

@@ -143,7 +143,7 @@ const AU_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
   },
   {
     id: "primus-flow-knit-mens",
-    handle: "lt-01-court-lite-white",
+    handle: "lt-01-court-lite-gum-white",
     title: "PRIMUS FLOW KNIT MENS",
     disciplineTags: "RUNNING, GYM & CARDIO, FUNCTIONAL FITNESS",
     price: 210,
@@ -179,11 +179,6 @@ const AU_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "Desert Taupe",
         color: "#c4b5a5",
         image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
-      },
-      {
-        name: "White",
-        color: "#f4f4f5",
-        image: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_035Angel3_1_3__v1_BASIS_3840x.jpg?v=1741371409",
       },
       {
         name: "Navy",
@@ -305,27 +300,6 @@ const AU_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "Sand",
         color: "#d7c4ab",
         image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ_241050__Aangepast_02LR.jpg",
-      },
-    ],
-  },
-  {
-    id: "ds-03-all-chocolate",
-    handle: "ds-03-all-chocolate",
-    title: "DS 03 ALL CHOCOLATE",
-    disciplineTags: "OILED FULL GRAIN, ALL-TERRAIN DRESS, WIDE TOE BOX",
-    price: 89,
-    compareAtPrice: 179,
-    currencySymbol: "A$",
-    swatches: [
-      {
-        name: "Chocolate",
-        color: "#4a3328",
-        image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ_250812_022_v1LR_3840x.jpg?v=1759409557",
-      },
-      {
-        name: "Obsidian",
-        color: "#18181b",
-        image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ-250204-032.jpg",
       },
     ],
   },
