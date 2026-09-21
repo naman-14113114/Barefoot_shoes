@@ -204,6 +204,22 @@ const US_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
     ],
   },
   {
+    id: "lt-01-platform-white",
+    handle: "lt-01-platform-white",
+    title: "LT 01 PLATFORM WHITE",
+    disciplineTags: "ELEVATED MINIMALISM, ARCHITECTURAL COURT, ZERO DROP",
+    price: 59,
+    compareAtPrice: 119,
+    currencySymbol: "$",
+    swatches: [
+      {
+        name: "White",
+        color: "#f4f4f5",
+        image: "/media/products/lt-01-platform-white/buudy-barefoot-shoes-lt-01-platform-white-wide-toe-box-hero.jpg",
+      },
+    ],
+  },
+  {
     id: "lt-03-suede-sand",
     handle: "lt-03-suede-sand",
     title: "LT 03 SUEDE SAND",

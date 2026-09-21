@@ -192,6 +192,14 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
     },
   ];
 
+  const lt01PlatformColorways = [
+    {
+      name: "White",
+      handle: "lt-01-platform-white",
+      img: "/media/products/lt-01-platform-white/buudy-barefoot-shoes-lt-01-platform-white-wide-toe-box-hero.jpg",
+    },
+  ];
+
   const defaultColorways = [
     {
       name: "White-Black",
@@ -274,6 +282,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       img: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
     },
     {
+      name: "Platform White",
+      handle: "lt-01-platform-white",
+      img: "/media/products/lt-01-platform-white/buudy-barefoot-shoes-lt-01-platform-white-wide-toe-box-hero.jpg",
+    },
+    {
       name: "Nappa White",
       handle: "lt-01-premium-nappa-white",
       img: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_052Angel3_v1_3840x.jpg?v=1700500234",
@@ -292,9 +305,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
             ? lt02Colorways
             : product.handle.startsWith("lt-01-court-lite")
               ? lt01CourtLiteColorways
-              : product.handle.startsWith("rs-01")
-                ? rs01Colorways
-                : defaultColorways;
+              : product.handle.startsWith("lt-01-platform")
+                ? lt01PlatformColorways
+                : product.handle.startsWith("rs-01")
+                  ? rs01Colorways
+                  : defaultColorways;
 
   const handleAddToCart = () => {
     if (!selectedSizeEu) {
