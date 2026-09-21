@@ -171,6 +171,11 @@ const AU_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-01-court-lite-nubuck-suede-sand/buudy-barefoot-shoes-lt-01-court-lite-nubuck-suede-sand-wide-toe-box-hero.jpg",
       },
       {
+        name: "Desert Taupe",
+        color: "#c4b5a5",
+        image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
+      },
+      {
         name: "White",
         color: "#f4f4f5",
         image: "https://www.etq-amsterdam.com/cdn/shop/files/ETQ_Model_035Angel3_1_3__v1_BASIS_3840x.jpg?v=1741371409",
@@ -179,6 +184,22 @@ const AU_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "Navy",
         color: "#1e293b",
         image: "https://cdn.shopify.com/s/files/1/0505/9044/9849/files/ETQ-250204-187.jpg",
+      },
+    ],
+  },
+  {
+    id: "rs-01-runner-desert-taupe",
+    handle: "rs-01-runner-desert-taupe",
+    title: "RS 01 RUNNER DESERT TAUPE",
+    disciplineTags: "ROAD RUNNING, ATHLETIC PERFORMANCE, ZERO DROP",
+    price: 89,
+    compareAtPrice: 179,
+    currencySymbol: "A$",
+    swatches: [
+      {
+        name: "Desert Taupe",
+        color: "#c4b5a5",
+        image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
       },
     ],
   },

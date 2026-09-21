@@ -191,6 +191,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "rs-01-runner-desert-taupe",
+      handle: "rs-01-runner-desert-taupe",
+      title: "RS 01 Runner Desert Taupe",
+      subtitle: "Technical Mesh & Suede",
+      price: 59,
+      compareAtPrice: 119,
+      badge: "Trending",
+      image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
+      variantId: "100099018",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",
