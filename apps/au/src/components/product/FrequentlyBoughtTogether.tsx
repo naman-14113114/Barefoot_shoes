@@ -215,6 +215,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "lt-01-court-lite-gum-white",
+      handle: "lt-01-court-lite-gum-white",
+      title: "LT 01 Court Lite Gum White",
+      subtitle: "Court Lite Gum",
+      price: 89,
+      compareAtPrice: 179,
+      badge: "Trending",
+      image: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
+      variantId: "100099404",
+      sizeEu: 42,
+    },
+    {
       id: "lt-03-suede-desert-taupe",
       handle: "lt-03-suede-sand",
       title: "LT 03 Suede Desert Taupe",

@@ -182,6 +182,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "lt-01-court-lite-nubuck-suede-sand",
       img: "/media/products/lt-01-court-lite-nubuck-suede-sand/buudy-barefoot-shoes-lt-01-court-lite-nubuck-suede-sand-wide-toe-box-hero.jpg",
     },
+    {
+      name: "Gum White",
+      handle: "lt-01-court-lite-gum-white",
+      img: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
+    },
   ];
 
   const rs01Colorways = [
@@ -285,6 +290,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       name: "Platform White",
       handle: "lt-01-platform-white",
       img: "/media/products/lt-01-platform-white/buudy-barefoot-shoes-lt-01-platform-white-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "Gum White",
+      handle: "lt-01-court-lite-gum-white",
+      img: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
     },
     {
       name: "Nappa White",

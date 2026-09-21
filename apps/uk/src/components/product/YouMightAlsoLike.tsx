@@ -171,6 +171,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         image: "/media/products/lt-01-court-lite-nubuck-suede-sand/buudy-barefoot-shoes-lt-01-court-lite-nubuck-suede-sand-wide-toe-box-hero.jpg",
       },
       {
+        name: "Gum White",
+        color: "#c49a6c",
+        image: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
+      },
+      {
         name: "Desert Taupe",
         color: "#c4b5a5",
         image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
@@ -216,6 +221,22 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         name: "White",
         color: "#f4f4f5",
         image: "/media/products/lt-01-platform-white/buudy-barefoot-shoes-lt-01-platform-white-wide-toe-box-hero.jpg",
+      },
+    ],
+  },
+  {
+    id: "lt-01-court-lite-gum-white",
+    handle: "lt-01-court-lite-gum-white",
+    title: "LT 01 COURT LITE GUM WHITE",
+    disciplineTags: "RETRO COURT, NATURAL POSTURE, ZERO DROP",
+    price: 49,
+    compareAtPrice: 99,
+    currencySymbol: "£",
+    swatches: [
+      {
+        name: "Gum White",
+        color: "#c49a6c",
+        image: "/media/products/lt-01-court-lite-gum-white/buudy-barefoot-shoes-lt-01-court-lite-gum-white-lateral-side-profile-hero.jpg",
       },
     ],
   },
