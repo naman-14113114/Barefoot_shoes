@@ -203,6 +203,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "rs-01-runner-all-black",
+      handle: "rs-01-runner-all-black",
+      title: "RS 01 Runner All Black",
+      subtitle: "Technical Mesh & Suede",
+      price: 89,
+      compareAtPrice: 179,
+      badge: "Trending",
+      image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      variantId: "100099019",
+      sizeEu: 42,
+    },
+    {
       id: "lt-01-platform-white",
       handle: "lt-01-platform-white",
       title: "LT 01 Platform White",

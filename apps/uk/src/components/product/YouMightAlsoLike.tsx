@@ -201,6 +201,32 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         color: "#c4b5a5",
         image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
       },
+      {
+        name: "All Black",
+        color: "#18181b",
+        image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+    ],
+  },
+  {
+    id: "rs-01-runner-all-black",
+    handle: "rs-01-runner-all-black",
+    title: "RS 01 RUNNER ALL BLACK",
+    disciplineTags: "ROAD RUNNING, ATHLETIC PERFORMANCE, ZERO DROP",
+    price: 49,
+    compareAtPrice: 99,
+    currencySymbol: "£",
+    swatches: [
+      {
+        name: "All Black",
+        color: "#18181b",
+        image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Desert Taupe",
+        color: "#c4b5a5",
+        image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
+      },
     ],
   },
   {

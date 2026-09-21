@@ -190,6 +190,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       handle: "rs-01-runner-desert-taupe",
       img: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
     },
+    {
+      name: "All Black",
+      handle: "rs-01-runner-all-black",
+      img: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+    },
   ];
 
   const lt01PlatformColorways = [
@@ -270,6 +275,11 @@ export function StickyBuyBox({ product }: StickyBuyBoxProps) {
       name: "Desert Taupe",
       handle: "rs-01-runner-desert-taupe",
       img: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
+    },
+    {
+      name: "All Black",
+      handle: "rs-01-runner-all-black",
+      img: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
     },
     {
       name: "Platform White",
