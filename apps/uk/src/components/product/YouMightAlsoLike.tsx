@@ -206,6 +206,11 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
         color: "#18181b",
         image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
       },
+      {
+        name: "Anthracite",
+        color: "#374151",
+        image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+      },
     ],
   },
   {
@@ -217,6 +222,37 @@ const UK_RECOMMENDED_PRODUCTS: RecommendedProduct[] = [
     compareAtPrice: 99,
     currencySymbol: "£",
     swatches: [
+      {
+        name: "All Black",
+        color: "#18181b",
+        image: "/media/products/rs-01-runner-all-black/buudy-barefoot-shoes-rs-01-runner-all-black-lateral-profile-hero.jpg",
+      },
+      {
+        name: "Desert Taupe",
+        color: "#c4b5a5",
+        image: "/media/products/rs-01-runner-desert-taupe/buudy-barefoot-shoes-rs-01-runner-desert-taupe-wide-toe-box-hero.jpg",
+      },
+      {
+        name: "Anthracite",
+        color: "#374151",
+        image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+      },
+    ],
+  },
+  {
+    id: "rs-01-runner-anthracite",
+    handle: "rs-01-runner-anthracite",
+    title: "RS 01 RUNNER ANTHRACITE",
+    disciplineTags: "ROAD RUNNING, ATHLETIC PERFORMANCE, ZERO DROP",
+    price: 49,
+    compareAtPrice: 99,
+    currencySymbol: "£",
+    swatches: [
+      {
+        name: "Anthracite",
+        color: "#374151",
+        image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+      },
       {
         name: "All Black",
         color: "#18181b",

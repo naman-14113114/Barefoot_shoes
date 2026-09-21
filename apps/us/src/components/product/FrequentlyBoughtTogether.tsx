@@ -215,6 +215,18 @@ export function FrequentlyBoughtTogether() {
       sizeEu: 42,
     },
     {
+      id: "rs-01-runner-anthracite",
+      handle: "rs-01-runner-anthracite",
+      title: "RS 01 Runner Anthracite",
+      subtitle: "Technical Knit & Suede",
+      price: 59,
+      compareAtPrice: 119,
+      badge: "Trending",
+      image: "/media/products/rs-01-runner-anthracite/buudy-barefoot-shoes-rs-01-runner-anthracite-lateral-profile-hero.jpg",
+      variantId: "100099021",
+      sizeEu: 42,
+    },
+    {
       id: "lt-01-platform-white",
       handle: "lt-01-platform-white",
       title: "LT 01 Platform White",
